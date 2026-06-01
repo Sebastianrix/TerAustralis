@@ -1,6 +1,38 @@
 import { useEffect, useRef } from 'react'
 import './App.css'
 
+function TerAustralisWordmark({ size = 22 }: { size?: number }) {
+  const triW = size * 0.68
+  const triH = size * 0.48
+  return (
+    <div className="ter-wordmark" style={{ fontSize: size }}>
+      <span className="ter-wordmark-plain">Ter&nbsp;</span>
+      <span className="ter-wordmark-a-wrap">
+        <svg
+          className="ter-wordmark-triangle"
+          viewBox="0 0 16 11"
+          style={{ width: triW, height: triH }}
+          xmlns="http://www.w3.org/2000/svg"
+          aria-hidden="true"
+        >
+          <polygon points="8,0 16,11 0,11" fill="#CC1111" />
+        </svg>
+        <span className="ter-wordmark-blue-a">A</span>
+      </span>
+      <span className="ter-wordmark-plain">ustralis</span>
+    </div>
+  )
+}
+
+function CrystalCoreLogo({ scale = 1 }: { scale?: number }) {
+  return (
+    <div className="crystalcore-logo" style={{ '--cc-scale': scale } as React.CSSProperties}>
+      <span className="cc-crystal">Crystal</span>
+      <span className="cc-core">CORE</span>
+    </div>
+  )
+}
+
 function StarCanvas() {
   const canvasRef = useRef<HTMLCanvasElement>(null)
 
@@ -203,8 +235,7 @@ export default function App() {
         {/* Nav */}
         <nav className="nav">
           <div className="nav-logo">
-            <div className="nav-logo-icon">✦</div>
-            TerAustralis
+            <TerAustralisWordmark size={22} />
           </div>
 
           <ul className="nav-links">
@@ -287,6 +318,23 @@ export default function App() {
           </div>
         </div>
 
+        {/* Partners / Ecosystem */}
+        <section className="partners-section">
+          <div className="partners-inner">
+            <div className="partners-label">Ecosystem & Partners</div>
+            <div className="partners-grid">
+              <div className="partner-card">
+                <TerAustralisWordmark size={32} />
+                <span className="partner-tagline">Core Protocol</span>
+              </div>
+              <div className="partner-card">
+                <CrystalCoreLogo scale={1} />
+                <span className="partner-tagline">Data Infrastructure</span>
+              </div>
+            </div>
+          </div>
+        </section>
+
         {/* Features */}
         <section className="section" id="features">
           <div className="section-inner">
@@ -366,8 +414,7 @@ export default function App() {
           <div className="footer-inner">
             <div>
               <div className="footer-logo">
-                <div className="nav-logo-icon">✦</div>
-                TerAustralis
+                <TerAustralisWordmark size={20} />
               </div>
               <div className="footer-tagline">Terra Australis Incognita</div>
             </div>

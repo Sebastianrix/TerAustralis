@@ -14,6 +14,128 @@
   flex-direction: column;
 }
 
+/* ── TerAustralis Wordmark ───────────────────────── */
+.ter-wordmark {
+  display: inline-flex;
+  align-items: baseline;
+  font-family: 'Space Grotesk', sans-serif;
+  font-weight: 700;
+  letter-spacing: -0.5px;
+  line-height: 1;
+  user-select: none;
+}
+
+.ter-wordmark-plain {
+  color: var(--text-h);
+}
+
+.ter-wordmark-a-wrap {
+  position: relative;
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.ter-wordmark-triangle {
+  position: absolute;
+  top: -0.55em;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.ter-wordmark-blue-a {
+  color: #3B6FE8;
+}
+
+/* ── CrystalCore Logo ────────────────────────────── */
+.crystalcore-logo {
+  display: inline-block;
+  font-family: 'Space Grotesk', sans-serif;
+  font-weight: 900;
+  line-height: 0.88;
+  user-select: none;
+}
+
+.cc-crystal {
+  display: block;
+  font-size: calc(32px * var(--cc-scale, 1));
+  color: #7B42E8;
+  letter-spacing: -1px;
+  position: relative;
+  z-index: 2;
+}
+
+.cc-core {
+  display: block;
+  font-size: calc(36px * var(--cc-scale, 1));
+  color: #7B42E8;
+  letter-spacing: -1px;
+  margin-top: calc(-6px * var(--cc-scale, 1));
+  padding-left: calc(4px * var(--cc-scale, 1));
+  position: relative;
+  z-index: 1;
+}
+
+/* ── Partners / Ecosystem Section ────────────────── */
+.partners-section {
+  padding: 72px 48px;
+  border-bottom: 1px solid var(--border);
+  background: rgba(255, 255, 255, 0.008);
+}
+
+.partners-inner {
+  max-width: 1100px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.partners-label {
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: var(--text-dim);
+  margin-bottom: 40px;
+}
+
+.partners-grid {
+  display: flex;
+  align-items: stretch;
+  justify-content: center;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+
+.partner-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+  padding: 32px 52px;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 20px;
+  transition: all 0.3s;
+  min-width: 240px;
+}
+
+.partner-card:hover {
+  border-color: rgba(155, 92, 255, 0.25);
+  background: rgba(255, 255, 255, 0.04);
+  transform: translateY(-3px);
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.25);
+}
+
+.partner-tagline {
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: var(--text-dim);
+}
+
 /* ── Nav ─────────────────────────────────────────── */
 .nav {
   position: fixed;
