@@ -1,0 +1,6 @@
+services:
+  web:
+    build: ./my-app
+    ports:
+      - "80:80"
+    restart: unless-stopped
