@@ -7,6 +7,17 @@
 
 > **Note**: This is a living document. We can update, expand, or refine sections iteratively as the vision, technical details, regulatory context, and partnerships develop.
 
+### Ownership & Authorship
+
+This litepaper was initiated and is maintained by **Crystal Elle Arena-Turner** as part of the ongoing development of the TerAustralis Incognita Protocol and the broader **Starbase Down Under** vision.
+
+The document is intended to be openly developed. Feedback, refinements, and contributions from aligned engineers, builders, policymakers, Indigenous partners, and futurists are welcomed and encouraged.
+
+The underlying protocol vision prioritizes **builder-first** incentives, permissionless participation, and genuine partnership (including with native title holders). Specific intellectual property, governance, token, and ownership structures for the protocol will be defined in greater detail during the Exploration phase, including through tokenomics design and community governance frameworks.
+
+**Contributor Licensing Intent**  
+Contributions to this litepaper (and future related materials) are intended to be made under open terms aligned with the project’s permissionless and builder-first ethos. Where feasible, contributions will be accepted under **CC0 1.0 Universal** (public domain dedication) or similarly permissive licenses to maximize reusability, forkability, and collaborative development. Formal contribution guidelines, licensing terms, and repository processes will be established during the Exploration phase alongside governance and technical infrastructure.
+
 ### Version Control & Iteration Guidelines
 
 This is a **living document**. We will update it collaboratively as the vision, technical details, regulatory context, partnerships, and strategic priorities evolve.
@@ -16,10 +27,18 @@ This is a **living document**. We will update it collaboratively as the vision, 
 - **Significant changes** (new sections, major rewrites, new principles, roadmap updates, regulatory additions): Increment the minor version (e.g. v0.2.4 → v0.3.0)
 - **Major milestones** (ready for broader external sharing, testnet alignment, formal release, or substantial structural change): Increment the major version (e.g. v0.3.0 → v1.0.0)
 
+**Branching strategy**
+- **`main`** — The primary, stable working version of the litepaper. This is the default branch we edit for most updates and refinements.
+- **Topic / feature branches** (conceptual or as separate working files) — Used for larger explorations, such as `draft/tokenomics-revision`, `draft/indigenous-partnership-deep-dive`, or `draft/technical-architecture-v2`. These allow parallel development without disrupting the main document.
+- **When to branch vs edit `main` directly**:
+  - Small-to-medium refinements and clarifications → Edit `main` directly and increment the patch version.
+  - Major new sections, structural changes, or experimental work → Work on a topic branch first. Once ready, consolidate the strongest elements back into `main` with an appropriate version bump (usually minor).
+- After merging outcomes from a topic branch into `main`, we update the version number and record the changes in the Changelog.
+
 **Update process**
-1. Tell me what you want to change, add, expand, or refine.
-2. I will draft the proposed updates and edit this file directly.
-3. We will record meaningful changes in a **Changelog** section (added at the bottom of this document).
+1. Tell me what you want to change, add, expand, or refine (and whether it should stay on `main` or use a topic branch).
+2. I will draft the proposed updates and edit the file accordingly.
+3. We will record meaningful changes in the **Changelog** section at the bottom.
 4. The version number in the header will be updated to reflect the scope of changes.
 
 **Current status**  
