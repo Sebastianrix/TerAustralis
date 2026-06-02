@@ -1,0 +1,8 @@
+bin/
+obj/
+*.user
+.vs/
+.idea/
+
+# Keep appsettings.Development.json out of git — use env vars / user secrets
+appsettings.Development.json
