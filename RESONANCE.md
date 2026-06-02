@@ -5,6 +5,16 @@
 
 ---
 
+## Acknowledgement of Country
+
+TerAustralis Incognita acknowledges the Traditional Custodians of the lands, waters, and skies across Australia on which this work is imagined and will be built. We pay our respects to Elders past and present, and to the many First Nations whose continuous knowledge of the sky is among the oldest on Earth.
+
+We recognise that Songlines and First Nations astronomy are living cultural and intellectual heritage that belong to their custodians. Where this project draws inspiration from that intelligence, it does so with humility and respect — never as a claim of ownership, and never as use of sacred knowledge without consent. Our commitment is to genuine partnership and free, prior, and informed consent (FPIC), including engagement with Prescribed Body Corporates and respect for Indigenous Land Use Agreements. Any cultural framing in this and related documents is held as **provisional and consent-pending** until that partnership is established.
+
+Sovereignty was never ceded.
+
+---
+
 ## The Invitation
 
 TerAustralis Incognita is not a launch company or a satellite operator.  
