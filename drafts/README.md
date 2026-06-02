@@ -25,6 +25,7 @@ versioning and iteration rules.
 | [`australian-node-network.md`](australian-node-network.md) | Real Australian node taxonomy + Starline corridors; Uluru honored but never infrastructure; Seven Sisters framing held provisional/consent-pending. | 🟡 Concept; consent pathway pending |
 | [`water-heart.md`](water-heart.md) | The **symbolic heart**: underground water & waterways — distributed, connecting, life-giving; sky-above/water-below duality; non-negotiable water stewardship duty. | 🟡 Concept; consent + stewardship pending |
 | [`node-registry.md`](node-registry.md) | Node identifier scheme (region tag + number + symbolic name); founder node **451 — Bradbury**; the **Rens (Mockingbirds)** archetype — the voices/singers, "spread the bird, not the word"; real public figures honorary/consent-pending. | 🟡 Concept; provisional |
+| [`origin-of-the-keeper.md`](origin-of-the-keeper.md) | A personal origin note — the carousel music box (plays "Memory") given on a first Christmas by Nanny and Bridget; where the keeping began. First names/relationships only. | ⚪ Standalone (the heart) |
 
 ## The architecture in one line
 
