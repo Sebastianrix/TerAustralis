@@ -18,6 +18,19 @@ survive and cheating cannot win.
 This is both a **value** (truth as a first principle) and a **mechanism** (the
 crypto-economic design below). The two are the same thing pointed in one direction.
 
+### The adversary: the Noise
+
+If truth is **signal**, the adversary is **the Noise** — everything that corrupts the
+signal, drowns out the true voices, and muddies what is real: false attestations,
+spam, Sybil swarms, consent violations, fraud, tampering. The Noise does not need a
+scary face; it is simply interference against the truth.
+
+This naming matters across the project: the **Stars** (`node-registry.md`) are the
+true *signal* — voices that shine and sing — and the **Noise** is what works against
+them. (It also keeps "vampire" free for its proper, misunderstood-outsider meaning
+among the Star natures, rather than the attacker.) Everything below is how the
+protocol turns the Noise down until honesty is the only signal that carries.
+
 ## 2. What truth looks like in the protocol
 
 - **Verifiable, not trusted.** Claims are backed by signed telemetry, license

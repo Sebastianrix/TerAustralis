@@ -77,12 +77,11 @@ specific copyrighted characters are used.)
 - **Alien** — the one with a hidden origin, who discovers they were *of the stars all
   along*. The nature of **latent belonging** (echoing `origin-of-the-keeper.md` and the
   hidden-origin motif).
-- **Vampire** — held with care: in folklore the night-creature cast as monster yet
-  seeking not to harm. **Open tension:** elsewhere this project uses "digital vampire"
-  for the *parasite/attacker* that drains the network (`security-and-deterrence.md`).
-  These two readings must be kept distinct — a Star's "vampire nature" is the
-  misunderstood-outsider sense, **never** the draining-attacker sense. (See open
-  question below.)
+- **Vampire** — in folklore the night-creature cast as monster yet seeking not to
+  harm. A Star's "vampire nature" is purely this **misunderstood-outsider** sense.
+  *(Resolved: the draining attacker is no longer called a "vampire" — it is named
+  **the Noise** in `security-and-deterrence.md` — so "vampire" belongs cleanly to the
+  Stars.)*
 
 Any real entertainer named as a Star is **honorary and consent-pending** — a light is
 honored, never claimed — and becomes a participating node only through the affirmative
@@ -134,7 +133,3 @@ choosing it, and choosing it is always reversible.
 - Should symbolic names be optional, encouraged, or reserved for specific roles?
 - How are honorary listings surfaced respectfully (e.g. clearly labelled as honorary
   so they are never mistaken for endorsements)?
-- **Vampire — two meanings to keep separate.** The Star "vampire nature" (a
-  misunderstood outsider who belongs) must never be confused with the "digital
-  vampire" attacker that drains the network in `security-and-deterrence.md`. Do these
-  need different names to avoid the collision?
