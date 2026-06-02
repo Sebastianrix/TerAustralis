@@ -121,6 +121,26 @@ senses at once. Stars in the sky, and the people who shine for us.
 > **theme** is used — no lyric is reproduced — and any direct lyric in a public
 > artifact would require licensing from the rights holders.
 
+## Eyes closed — faith in the way
+
+A fifth theme: that you can travel a path **with your eyes closed** when it is truly
+yours — by heart, by memory, by faith, not by sight.
+
+- **Known by heart.** A route walked enough times, or held deeply enough, can be
+  travelled blind. The keeper can steer by her first fixed point (the carousel, the
+  origin) without needing to see it — the heading was set long ago
+  (`origin-of-the-keeper.md`).
+- **Faith across distance.** This is also how the **Navigator** and delay-tolerant
+  networking actually work: you commit to a path toward a node you cannot currently
+  see, trusting it is there. Acting in the dark, on faith, is a feature — not a flaw.
+- **Resilience.** "Eyes closed" is also the calm of having been through hard things
+  before: you can meet them again because you already know the shape of them.
+
+> *Thematic note:* this "eyes closed" framing is inspired by the theme of a song about
+> doing hard things by faith and from experience (Imagine Dragons, "Eyes Closed").
+> Only the **theme** is used — no lyric is reproduced — and any direct lyric in a
+> public artifact would require licensing from the rights holders.
+
 ## Suggested uses (in priority of safety)
 
 1. **Internal/thematic framing** — use the *theme* ("one, but many") as the
