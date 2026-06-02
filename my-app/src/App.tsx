@@ -217,9 +217,11 @@ export default function App() {
             <a href="https://x.com/TerAustralis" target="_blank" rel="noreferrer">
               <button className="btn btn-ghost">Follow on X</button>
             </a>
-            <button className="btn btn-primary">
-              Join Waitlist ↗
-            </button>
+            <a href="https://x.com/TerAustralis" target="_blank" rel="noreferrer">
+              <button className="btn btn-primary">
+                Join Waitlist ↗
+              </button>
+            </a>
           </div>
         </nav>
 
@@ -349,9 +351,11 @@ export default function App() {
               The frontier is open—will you claim your place?
             </p>
             <div className="cta-buttons">
-              <button className="btn-cta btn-cta-primary">
-                Join Waitlist ✦
-              </button>
+              <a href="https://x.com/TerAustralis" target="_blank" rel="noreferrer">
+                <button className="btn-cta btn-cta-primary">
+                  Join Waitlist ✦
+                </button>
+              </a>
               <a href="https://x.com/TerAustralis" target="_blank" rel="noreferrer">
                 <button className="btn-cta btn-cta-secondary">
                   Follow on X ↗
@@ -384,7 +388,7 @@ export default function App() {
               </a>
             </div>
 
-            <div className="footer-copy">© 2025 TerAustralis. All rights reserved.</div>
+            <div className="footer-copy">© 2026 TerAustralis. All rights reserved.</div>
           </div>
         </footer>
       </div>

@@ -1,73 +1,56 @@
-# React + TypeScript + Vite
+# TerAustralis — Landing Site
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+The marketing / landing site for the **TerAustralis Incognita Protocol**
+("Starbase Down Under"). Built with React 19, TypeScript, and Vite.
 
-Currently, two official plugins are available:
+> For the protocol vision and litepaper, see the [root README](../README.md).
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## What's here
 
-## React Compiler
+A single-page site (`src/App.tsx`) with:
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- An animated starfield hero canvas (twinkling stars + shooting stars)
+- Features grid, stats bar, and a phased roadmap
+- Call-to-action and footer linking to [x.com/TerAustralis](https://x.com/TerAustralis)
 
-## Expanding the ESLint configuration
+Most of the layout and copy lives in `src/App.tsx`; styling is in `src/App.css`.
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## Getting started
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
-
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+```bash
+npm install     # install dependencies
+npm run dev     # start the dev server with HMR
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+The dev server prints a local URL (typically http://localhost:5173).
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+## Scripts
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+| Command           | Description                                  |
+| ----------------- | -------------------------------------------- |
+| `npm run dev`     | Start the Vite dev server with hot reload    |
+| `npm run build`   | Type-check (`tsc -b`) and build for production |
+| `npm run preview` | Preview the production build locally         |
+| `npm run lint`    | Run ESLint over the project                  |
+
+## Project structure
+
 ```
+my-app/
+├── index.html          # HTML entry point
+├── src/
+│   ├── main.tsx        # React entry point
+│   ├── App.tsx         # Page layout, sections, and starfield canvas
+│   ├── App.css         # All page styling
+│   ├── index.css       # Global/base styles
+│   └── assets/         # Images (hero, logos)
+├── public/             # Static assets served as-is (favicon, icons)
+└── vite.config.ts      # Vite configuration
+```
+
+## Tech stack
+
+- [React 19](https://react.dev)
+- [TypeScript](https://www.typescriptlang.org)
+- [Vite](https://vite.dev) with [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react)
+- [ESLint](https://eslint.org)
