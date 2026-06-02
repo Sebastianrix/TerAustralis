@@ -50,6 +50,37 @@ The throughline: **independent many → coordinated one**, achieved *with* conse
 not over it. The song states the value; Starlines and the tokenomics make it
 mechanical.
 
+## The affirmative "yes"
+
+A second theme runs alongside "one, but many": that the thing which opens a path is
+a **freely-given yes**.
+
+It is easy to frame consent negatively — as a barrier, a *not-yet*, a gate that stays
+shut until conditions are met. That framing is true but incomplete. At its heart,
+consent is an **affirmation**: a *yes* that is worth waiting for, freely given, and
+worth honoring when it comes. The protocol is built not merely to *block the absence*
+of consent, but to *recognize and celebrate its presence*.
+
+This reframes the consent-gating already in the architecture:
+
+- In **Starlines**, the `consent(...)` Law condition is not only what keeps a path
+  closed — it is the **yes that opens it**. A Starline becoming "open" is an
+  affirmation recorded, not just an obstacle cleared.
+- In **partnership**, the spirit is building *with* people across difference, rather
+  than around or against them — collaboration as the default, opposition as the thing
+  to be patiently overcome with honesty.
+- In **"one, but many"**, two becoming one is itself an act of mutual yes — union
+  without erasure.
+
+So the emotional register of consent shifts from *"you may not, unless…"* to
+*"we proceed, because you said yes."* Same mechanism; a more honest and more humane
+framing of why it matters.
+
+> *Thematic note:* this "yes" framing is inspired by the theme of a well-known love
+> song (overcoming obstacles; a decisive, freely-given yes). As with the song above,
+> only the **theme** is used here — no lyric is reproduced. Any direct lyric in a
+> public artifact would require licensing from the rights holders.
+
 ## Suggested uses (in priority of safety)
 
 1. **Internal/thematic framing** — use the *theme* ("one, but many") as the
