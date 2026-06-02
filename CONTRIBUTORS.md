@@ -5,9 +5,11 @@ contributed to the project's vision, writing, and development.
 
 ## Team
 
-- **Crystal Elle Arena-Turner** — Founder, author, and keeper of the vision.
+- **Crystal Elle Arena-Turner** — also known as **CrystalCore**. Founder, principal,
+  author, and keeper of the vision. **TerAustralis Incognita is her business name.**
   Originated and maintains the TerAustralis Incognita Protocol and the broader
-  *Starbase Down Under* vision; directs all architectural and creative decisions.
+  *Starbase Down Under* vision; directs all architectural and creative decisions, and
+  is the **Communicator of the Council** (`drafts/council.md`).
 - **Sebastian** ([@Sebastianrix](https://github.com/Sebastianrix)) — Webmaster.
   Maintains the repository and the website, and handles web development and
   deployment.
