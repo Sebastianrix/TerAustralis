@@ -1,5 +1,5 @@
 # TerAustralis Incognita Protocol
-## Litepaper — Living Draft (v0.4.1)
+## Litepaper — Living Draft (v0.4.2)
 
 **First principles: Imagine Starbase Down Under. Build it.**  
 **Discovery Phase — Live**  
@@ -42,7 +42,7 @@ This is a **living document**. We will update it collaboratively as the vision, 
 4. The version number in the header will be updated to reflect the scope of changes.
 
 **Current status**  
-**Version:** v0.4.1  
+**Version:** v0.4.2  
 **Last updated:** June 2026
 
 This lightweight process keeps the document clean while maintaining a clear, auditable evolution of the litepaper.
@@ -198,7 +198,7 @@ From the unknown southern land, we launch the known future.
 - “Terra Australis Incognita: Protocol for the Multiplanetary Age.”  
 - “Build the Southern Starport. Own the Coordination Layer.”
 
-### Next Steps for v0.3
+### Next Steps
 
 - Full technical architecture and threat model (including interface considerations for regulatory and native title processes)
 - GitHub repository and initial modules
@@ -210,6 +210,9 @@ From the unknown southern land, we launch the known future.
 ---
 
 ## Changelog
+
+**v0.4.2** (June 2026)
+- Consistency pass: corrected the stale "Next Steps for v0.3" heading.
 
 **v0.4.1** (June 2026)
 - Refined the **Indigenous Sovereignty & Consent** principle to frame consent as an *affirmation* (a freely-given "yes" worth honoring), not merely a barrier, and to include stewardship of **water** alongside Country.
@@ -242,4 +245,4 @@ From the unknown southern land, we launch the known future.
 
 ---
 
-**Document Status**: Living draft (v0.4.1). Ready for iterative updates as we continue developing the vision.
+**Document Status**: Living draft (v0.4.2). Ready for iterative updates as we continue developing the vision.

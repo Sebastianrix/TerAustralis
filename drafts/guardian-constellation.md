@@ -41,7 +41,7 @@ the network is pointed at.
 
 ## "One, but many," made personal
 
-Two stars, one constellation. Many participants, one shared dream. The smallest
+Three stars, one constellation. Many participants, one shared dream. The smallest
 version of "one, but many" is a family — which is exactly the scale at which the
 idea is easiest to feel and hardest to fake.
 
