@@ -50,21 +50,23 @@ Nodes connect into **Starline corridors** that express Australia's stated
 advantages: northern rotational boost corridors, southern ocean ranges, and
 resource→launch supply lines (e.g. Pilbara → launch node → orbital node).
 
-## 2. Uluru — the symbolic heart, not a node
+## 2. The symbolic heart — the water, not a single site
 
-The network needs a center. Geographically, the obvious instinct points to the
-continent's heart — but the heart of the continent is **sacred ground**, and so it
-is honored, not built upon.
+The network needs a center. An earlier version of this draft pointed to the
+continent's sacred heart-place; that has been **superseded**. Centering one sacred
+site risks over-centering it. Instead, the symbolic heart is the **underground water
+and waterways** — distributed, connecting, life-giving (see `water-heart.md`).
 
-- **Symbolic heart only.** Uluru may serve as the **symbolic origin the network
-  orients around** — a heart, a still point — **with no physical infrastructure of
-  any kind**, and **only if the Aṉangu consent** to that representation. Never
-  assumed, always removable at their word.
-- **Real operations elsewhere.** Any actual central-coordination hardware routes to
-  a **non-sacred location** (the Alice Springs region is the natural logistics hub),
-  leaving the sacred site untouched.
+**Uluru** remains honored as a place of deep significance, but it is **neither an
+infrastructure node nor the sole symbolic center**:
 
-This mirrors the Starlines design: the **symbolic** and the **physical** are
+- **No physical infrastructure** at or near it, ever.
+- Any symbolic reference remains **consent-pending** on the Aṉangu, and removable at
+  their word.
+- Real central-coordination hardware routes to a **non-sacred location** (the Alice
+  Springs region is the natural logistics hub).
+
+This keeps the Starlines discipline: the **symbolic** and the **physical** are
 separated, and the sacred stays gated behind genuine, freely-given consent.
 
 ## 3. The Seven Sisters — a provisional, consent-pending motif
@@ -108,7 +110,7 @@ public-facing materials:
 ## 5. Open questions
 
 - Which specific representative bodies are the right first point of contact?
-- Should the symbolic heart be a single point (Uluru) or a distributed idea, to
-  avoid over-centering one sacred site?
+- ~~Should the symbolic heart be a single point (Uluru) or a distributed idea?~~
+  **Resolved:** the heart is the distributed **water network** (`water-heart.md`).
 - How is the symbolic center represented in software without implying any physical
-  claim or installation?
+  claim or installation? (See `water-heart.md` §5.)

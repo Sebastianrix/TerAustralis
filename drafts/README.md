@@ -22,7 +22,8 @@ versioning and iteration rules.
 | [`security-and-deterrence.md`](security-and-deterrence.md) | **Honesty & Truth** as structural security; per-actor deterrents (slashing, Law-gate, challenge windows). | 🟡 Principle in litepaper v0.4.0; threat model + mechanics here |
 | [`teraustralis-for-kids.md`](teraustralis-for-kids.md) | A children's explainer (ages ~3 and ~6–8) carrying the core ideas in plain language. | ⚪ Standalone |
 | [`guardian-constellation.md`](guardian-constellation.md) | Personal dedication woven into the architecture — guiding stars as the *why* (first names only; minors' fuller details deliberately omitted). | ⚪ Standalone |
-| [`australian-node-network.md`](australian-node-network.md) | Real Australian node taxonomy + Starline corridors; Uluru as a consent-gated **symbolic heart** (never infrastructure); Seven Sisters framing held provisional/consent-pending. | 🟡 Concept; consent pathway pending |
+| [`australian-node-network.md`](australian-node-network.md) | Real Australian node taxonomy + Starline corridors; Uluru honored but never infrastructure; Seven Sisters framing held provisional/consent-pending. | 🟡 Concept; consent pathway pending |
+| [`water-heart.md`](water-heart.md) | The **symbolic heart**: underground water & waterways — distributed, connecting, life-giving; sky-above/water-below duality; non-negotiable water stewardship duty. | 🟡 Concept; consent + stewardship pending |
 
 ## The architecture in one line
 
