@@ -1,5 +1,5 @@
 # TerAustralis Incognita Protocol
-## Litepaper — Living Draft (v0.4.0)
+## Litepaper — Living Draft (v0.4.1)
 
 **First principles: Imagine Starbase Down Under. Build it.**  
 **Discovery Phase — Live**  
@@ -42,7 +42,7 @@ This is a **living document**. We will update it collaboratively as the vision, 
 4. The version number in the header will be updated to reflect the scope of changes.
 
 **Current status**  
-**Version:** v0.4.0  
+**Version:** v0.4.1  
 **Last updated:** June 2026
 
 This lightweight process keeps the document clean while maintaining a clear, auditable evolution of the litepaper.
@@ -83,7 +83,7 @@ Future operations will require disruption-tolerant, trust-minimized systems for 
 
 - **Honesty & Truth** — The protocol protects itself with truth made structural, not with secrecy. Claims are verifiable rather than trusted (signed telemetry, attestations, reproducible simulations), the record is transparent and permanent, and the system is designed so that honesty is always the most rewarding strategy. This is the value that makes every other principle enforceable.
 - **Permissionless & Open** — Code, specifications, and data layers are fully auditable and forkable (CC0 ethos where possible), while respecting sovereign regulatory requirements.
-- **Indigenous Sovereignty & Consent** — Physical infrastructure coordination must be grounded in genuine partnership with native title holders. This includes early engagement with Prescribed Body Corporates, respect for Indigenous Land Use Agreements (ILUAs), protection of cultural heritage, and a commitment to free, prior and informed consent as an ethical standard and best practice. Indigenous knowledge systems and long-term stewardship of Country are recognized as valuable inputs to sustainable multiplanetary development.
+- **Indigenous Sovereignty & Consent** — Physical infrastructure coordination must be grounded in genuine partnership with native title holders. This includes early engagement with Prescribed Body Corporates, respect for Indigenous Land Use Agreements (ILUAs), protection of cultural heritage, and a commitment to free, prior and informed consent as an ethical standard and best practice. Consent is understood not merely as a barrier — an absence to be cleared — but as an **affirmation**: a freely-given *yes* that is worth waiting for, recognized when it comes, and honored on the terms of those who give it. The protocol is built to proceed *because* consent is present, not simply to halt where it is absent. Indigenous knowledge systems and long-term stewardship of Country and water are recognized as valuable inputs to sustainable multiplanetary development.
 - **Blazing Performance** — Sub-second finality where needed, high throughput, and edge-optimized design for remote Australian outback and orbital nodes.
 - **First-Principles** — Rebuild assumptions from physics, economics, and long-term human flourishing.
 - **Southern Advantage** — Critical minerals strategy + favorable geography + sovereign stability + respectful Indigenous partnership create a durable foundation.
@@ -211,6 +211,9 @@ From the unknown southern land, we launch the known future.
 
 ## Changelog
 
+**v0.4.1** (June 2026)
+- Refined the **Indigenous Sovereignty & Consent** principle to frame consent as an *affirmation* (a freely-given "yes" worth honoring), not merely a barrier, and to include stewardship of **water** alongside Country.
+
 **v0.4.0** (June 2026)
 - Added **Honesty & Truth** as a Guiding Principle — truth made structural (verifiable claims, transparent records, honesty as the dominant strategy), the value that makes every other principle enforceable.
 
@@ -239,4 +242,4 @@ From the unknown southern land, we launch the known future.
 
 ---
 
-**Document Status**: Living draft (v0.4.0). Ready for iterative updates as we continue developing the vision.
+**Document Status**: Living draft (v0.4.1). Ready for iterative updates as we continue developing the vision.
