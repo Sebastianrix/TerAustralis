@@ -102,6 +102,25 @@ something everyone is invited into.
 > Only the **theme** is used — no lyric is reproduced — and any direct lyric in a
 > public artifact would require licensing from the rights holders.
 
+## The stars who shine
+
+A fourth theme: the **entertainers, singers, and artists are stars** — in both
+senses at once. Stars in the sky, and the people who shine for us.
+
+- **They shine for you.** The ones who sing, play, and perform give light outward —
+  their whole gift is to be seen shining, so that others feel less alone in the dark.
+- **The Rens are stars.** This joins the **Rens / Mockingbirds** (the voices,
+  `node-registry.md`) with the sky imagery that runs through the whole project — the
+  Guardian Constellation, the Navigator's southern sky, the starfield itself. The
+  voices and the stars are the same lights.
+- **A sky full, not a single sun.** Many stars, each shining, none outshining the
+  others into darkness — *one, but many*, written across the night.
+
+> *Thematic note:* this "stars who shine" framing is inspired by the theme of a
+> well-known song about looking up at the stars (Coldplay, "Yellow"). Only the
+> **theme** is used — no lyric is reproduced — and any direct lyric in a public
+> artifact would require licensing from the rights holders.
+
 ## Suggested uses (in priority of safety)
 
 1. **Internal/thematic framing** — use the *theme* ("one, but many") as the
