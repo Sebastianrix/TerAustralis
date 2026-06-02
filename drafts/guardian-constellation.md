@@ -15,10 +15,12 @@
 ## The "why" behind the protocol
 
 The litepaper's **Multiplanetary Long-Termism** principle says *"Earth is the
-cradle."* A cradle is for someone. This protocol is built for the next generation —
-and it is dedicated to two of them:
+cradle."* A cradle is for someone. This protocol is built for the next generation.
 
-> **For Dru and Ember — the guiding stars.**
+The Guardian Constellation is **three guiding stars, one family** — the keeper and
+her two girls (first names only): **Crystal, Dru, and Ember**. In the starfield they
+are arranged as a small triangle — the keeper at the apex, the two girls below —
+joined into a single constellation that the sky always keeps lit.
 
 ## The constellation, in the architecture
 

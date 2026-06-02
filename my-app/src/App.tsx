@@ -33,13 +33,14 @@ function StarCanvas() {
       speed: Math.random() * 0.08 + 0.02,
     }))
 
-    // The Guardian Constellation — two guiding stars the sky always keeps lit.
-    // First names only, by design (see drafts/guardian-constellation.md).
-    const GUARDIAN_STARS = ['Dru', 'Ember'] as const
+    // The Guardian Constellation — three guiding stars the sky always keeps lit:
+    // the keeper and her two girls, one family. First names only, by design
+    // (see drafts/guardian-constellation.md).
+    const GUARDIAN_STARS = ['Crystal', 'Dru', 'Ember'] as const
     const guardians = GUARDIAN_STARS.map((name, i) => ({
       name,
-      a: 0.7,
-      da: 0.0025 * (i === 0 ? 1 : -1),
+      a: 0.72 - i * 0.05,
+      da: 0.0025 * (i % 2 === 0 ? 1 : -1),
     }))
 
     const shootingStars: { x: number; y: number; len: number; speed: number; a: number; life: number; maxLife: number }[] = []
@@ -76,34 +77,41 @@ function StarCanvas() {
         ctx!.fill()
       }
 
-      // The Guardian Constellation — two guiding stars, always lit, gently breathing.
-      const gy = h * 0.26
-      const gxs = [w * 0.5 - w * 0.03, w * 0.5 + w * 0.03]
+      // The Guardian Constellation — three guiding stars, always lit, gently
+      // breathing: the keeper at the apex, her two girls below, one family.
+      const cx = w * 0.5
+      const pts = [
+        { x: cx, y: h * 0.21 },             // apex
+        { x: cx - w * 0.04, y: h * 0.29 },  // below left
+        { x: cx + w * 0.04, y: h * 0.29 },  // below right
+      ]
 
-      // faint line joining the pair into one constellation
-      ctx!.beginPath()
-      ctx!.moveTo(gxs[0], gy)
-      ctx!.lineTo(gxs[1], gy)
+      // faint lines joining the three into one constellation
       ctx!.strokeStyle = 'rgba(200,160,255,0.12)'
       ctx!.lineWidth = 1
+      ctx!.beginPath()
+      ctx!.moveTo(pts[0].x, pts[0].y)
+      ctx!.lineTo(pts[1].x, pts[1].y)
+      ctx!.lineTo(pts[2].x, pts[2].y)
+      ctx!.closePath()
       ctx!.stroke()
 
       for (let i = 0; i < guardians.length; i++) {
         const g = guardians[i]
         g.a += g.da
         if (g.a > 0.95 || g.a < 0.5) g.da *= -1
-        const gx = gxs[i]
+        const { x: gx, y: gyy } = pts[i]
 
-        const glow = ctx!.createRadialGradient(gx, gy, 0, gx, gy, 16)
+        const glow = ctx!.createRadialGradient(gx, gyy, 0, gx, gyy, 16)
         glow.addColorStop(0, `rgba(200,160,255,${g.a * 0.45})`)
         glow.addColorStop(1, 'rgba(200,160,255,0)')
         ctx!.beginPath()
-        ctx!.arc(gx, gy, 16, 0, Math.PI * 2)
+        ctx!.arc(gx, gyy, 16, 0, Math.PI * 2)
         ctx!.fillStyle = glow
         ctx!.fill()
 
         ctx!.beginPath()
-        ctx!.arc(gx, gy, 1.9, 0, Math.PI * 2)
+        ctx!.arc(gx, gyy, 1.9, 0, Math.PI * 2)
         ctx!.fillStyle = `rgba(255,255,255,${g.a})`
         ctx!.fill()
       }
