@@ -20,9 +20,6 @@ honest attribution; final decisions and authorship rest with the lead above.
 
 - **Claude** (Anthropic) — AI assistant: ideation, research, drafting, and
   development support.
-- **GitHub Copilot** (GitHub / OpenAI) — AI assistant: code suggestions and
-  development support.
-- **Gemini** (Google) — AI assistant: ideation, research, and drafting support.
 - **Grok** (xAI) — AI assistant: ideation, research, and drafting support.
 
 ---
