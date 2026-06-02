@@ -422,7 +422,7 @@ export default function App() {
                 <div className="nav-logo-icon">✦</div>
                 TerAustralis
               </div>
-              <div className="footer-tagline">Terra Australis Incognita</div>
+              <div className="footer-tagline">TerAustralis Incognita</div>
             </div>
 
             <div className="footer-links">
