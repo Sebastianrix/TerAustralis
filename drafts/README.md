@@ -24,6 +24,7 @@ versioning and iteration rules.
 | [`guardian-constellation.md`](guardian-constellation.md) | Personal dedication woven into the architecture — guiding stars as the *why* (first names only; minors' fuller details deliberately omitted). | ⚪ Standalone |
 | [`australian-node-network.md`](australian-node-network.md) | Real Australian node taxonomy + Starline corridors; Uluru honored but never infrastructure; Seven Sisters framing held provisional/consent-pending. | 🟡 Concept; consent pathway pending |
 | [`water-heart.md`](water-heart.md) | The **symbolic heart**: underground water & waterways — distributed, connecting, life-giving; sky-above/water-below duality; non-negotiable water stewardship duty. | 🟡 Concept; consent + stewardship pending |
+| [`node-registry.md`](node-registry.md) | Node identifier scheme (region tag + number + symbolic name); founder node **451 — Bradbury**; real public figures honorary/consent-pending. | 🟡 Concept; provisional |
 
 ## The architecture in one line
 
