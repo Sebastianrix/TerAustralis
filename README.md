@@ -1,5 +1,5 @@
 # TerAustralis Incognita Protocol
-## Litepaper — Living Draft (v0.2.4)
+## Litepaper — Living Draft (v0.2.5)
 
 **First principles: Imagine Starbase Down Under. Build it.**  
 **Discovery Phase — Live**  
@@ -42,7 +42,7 @@ This is a **living document**. We will update it collaboratively as the vision, 
 4. The version number in the header will be updated to reflect the scope of changes.
 
 **Current status**  
-**Version:** v0.2.4  
+**Version:** v0.2.5  
 **Last updated:** June 2026
 
 This lightweight process keeps the document clean while maintaining a clear, auditable evolution of the litepaper.
@@ -187,6 +187,10 @@ From the unknown southern land, we launch the known future.
 
 ## Changelog
 
+**v0.2.5** (June 2026)
+- Updated landing-site documentation (`my-app/README.md`) with real project docs, scripts, and structure.
+- Fixed landing-site footer copyright year (2025 → 2026).
+
 **v0.2.4** (June 2026)
 - Refined **Indigenous Sovereignty & Consent** principle for greater legal accuracy and ethical clarity (references to Prescribed Body Corporates and ILUAs; positioned FPIC as ethical best practice).
 - Improved consistency of native title and regulatory language across Executive Summary, Opportunity, Protocol Overview, Technical Architecture, and other sections.
@@ -201,4 +205,4 @@ From the unknown southern land, we launch the known future.
 
 ---
 
-**Document Status**: Living draft (v0.2.4). Ready for iterative updates as we continue developing the vision.
+**Document Status**: Living draft (v0.2.5). Ready for iterative updates as we continue developing the vision.
