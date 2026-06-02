@@ -45,6 +45,20 @@ Three stars, one constellation. Many participants, one shared dream. The smalles
 version of "one, but many" is a family — which is exactly the scale at which the
 idea is easiest to feel and hardest to fake.
 
+## The power of three
+
+The constellation is drawn as a **triangle** — the keeper at the apex, the two girls
+below. This is not only an arrangement; it is a truth about strength:
+
+- **Three is the most stable number.** A triangle is the strongest, most stable shape
+  there is — three points holding each other up in a way one or two never can. The
+  power of three is built into the geometry, not added to it.
+- **Powered by love.** What holds a triangle of *people* together is not struts — it
+  is **love**. The power of three, and the power of love, are the same force here: the
+  bond that keeps the three stars one constellation.
+- **The pattern of the whole.** This is the project in miniature — many held as one,
+  without erasing any — proven first at the scale of a family of three.
+
 ## Notes
 
 - **Founder genesis identifier:** the founder is associated with the genesis seed
