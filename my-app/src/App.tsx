@@ -384,7 +384,7 @@ export default function App() {
               </a>
             </div>
 
-            <div className="footer-copy">© 2025 TerAustralis. All rights reserved.</div>
+            <div className="footer-copy">© 2026 TerAustralis. All rights reserved.</div>
           </div>
         </footer>
       </div>
