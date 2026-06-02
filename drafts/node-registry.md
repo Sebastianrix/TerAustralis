@@ -53,6 +53,11 @@ archetype is the **Mockingbird**.
   freedom of expression** — not dogma, doctrine, or rigid text. This is the
   permissionless, builder-first ethos rendered as culture: many voices, freely sung,
   no gatekeeper.
+- **Birds like angels — messengers.** *Angel* means *messenger*. The Rens are
+  messengers who carry song **between earth and sky** — fitting the sky-above /
+  water-below frame: the voices are the ones who travel *between*. Their angel-number
+  resonance is **444** — long associated with protection, guidance, and presence — a
+  fitting marker for voices that watch over and uplift.
 
 Any real singer or artist named as a Ren is **honorary and consent-pending** — a
 voice is honored, never claimed — and becomes a participating node only through the
