@@ -1,4 +1,10 @@
-# The Codex — The Symbolic System in One Place
+# Red Dust to Rockets — The Codex
+
+*The symbolic system in one place.*
+
+> **Red Dust to Rockets** — the whole thesis in four words: from the red Australian
+> earth beneath our feet to the rockets above. Country to cosmos; cradle to the stars;
+> the Pilbara's red dust carried, by way of water and work, all the way to orbit.
 
 **Status:** Working draft — the keeper's map of the whole mythos.
 **Companion to:** every other draft, and the litepaper (root `README.md`).

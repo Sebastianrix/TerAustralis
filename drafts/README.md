@@ -10,7 +10,7 @@ versioning and iteration rules.
 > - 🟡 **Partially consolidated** — the concept is in the litepaper; mechanical detail remains here.
 > - ⚪ **Standalone** — lives here by design; not intended for the main litepaper.
 
-> **Start here:** [`codex.md`](codex.md) — the whole symbolic system on one page.
+> **Start here:** [`codex.md`](codex.md) — *Red Dust to Rockets*, the whole symbolic system on one page.
 
 ## Index
 
@@ -29,7 +29,7 @@ versioning and iteration rules.
 | [`node-registry.md`](node-registry.md) | Node identifier scheme (region tag + number + symbolic name); founder node **451 — Bradbury**; the **Stars** archetype — entertainers/voices who shine, "spread the bird, not the word" (Ren = one Star, the Mockingbird); real public figures honorary/consent-pending. | 🟡 Concept; provisional |
 | [`origin-of-the-keeper.md`](origin-of-the-keeper.md) | A personal origin note — the carousel music box (plays "Memory") given on a first Christmas by Nanny and Bridget; where the keeping began. First names/relationships only. | ⚪ Standalone (the heart) |
 | [`song-maps.md`](song-maps.md) | Songs read as **maps** (Starlines you can hum) — "Kiss Me", "A Thousand Miles". Theme/interpretation only; no lyrics; routes for the keeper to trace. | ⚪ Standalone; open collection |
-| [`codex.md`](codex.md) | **The Codex** — the whole symbolic system (people, numbers, architecture, creeds, songs, origin) gathered onto one page. | ⚪ Standalone (the map of maps) |
+| [`codex.md`](codex.md) | **Red Dust to Rockets** (The Codex) — the whole symbolic system (people, numbers, architecture, creeds, songs, origin) gathered onto one page. | ⚪ Standalone (the map of maps) |
 
 ## The architecture in one line
 
