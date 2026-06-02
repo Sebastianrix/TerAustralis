@@ -33,6 +33,15 @@ function StarCanvas() {
       speed: Math.random() * 0.08 + 0.02,
     }))
 
+    // The Guardian Constellation — two guiding stars the sky always keeps lit.
+    // First names only, by design (see drafts/guardian-constellation.md).
+    const GUARDIAN_STARS = ['Dru', 'Ember'] as const
+    const guardians = GUARDIAN_STARS.map((name, i) => ({
+      name,
+      a: 0.7,
+      da: 0.0025 * (i === 0 ? 1 : -1),
+    }))
+
     const shootingStars: { x: number; y: number; len: number; speed: number; a: number; life: number; maxLife: number }[] = []
 
     function spawnShootingStar() {
@@ -64,6 +73,38 @@ function StarCanvas() {
         ctx!.beginPath()
         ctx!.arc(s.x, s.y, s.r, 0, Math.PI * 2)
         ctx!.fillStyle = `rgba(255,255,255,${Math.max(0, s.a * 0.8)})`
+        ctx!.fill()
+      }
+
+      // The Guardian Constellation — two guiding stars, always lit, gently breathing.
+      const gy = h * 0.26
+      const gxs = [w * 0.5 - w * 0.03, w * 0.5 + w * 0.03]
+
+      // faint line joining the pair into one constellation
+      ctx!.beginPath()
+      ctx!.moveTo(gxs[0], gy)
+      ctx!.lineTo(gxs[1], gy)
+      ctx!.strokeStyle = 'rgba(200,160,255,0.12)'
+      ctx!.lineWidth = 1
+      ctx!.stroke()
+
+      for (let i = 0; i < guardians.length; i++) {
+        const g = guardians[i]
+        g.a += g.da
+        if (g.a > 0.95 || g.a < 0.5) g.da *= -1
+        const gx = gxs[i]
+
+        const glow = ctx!.createRadialGradient(gx, gy, 0, gx, gy, 16)
+        glow.addColorStop(0, `rgba(200,160,255,${g.a * 0.45})`)
+        glow.addColorStop(1, 'rgba(200,160,255,0)')
+        ctx!.beginPath()
+        ctx!.arc(gx, gy, 16, 0, Math.PI * 2)
+        ctx!.fillStyle = glow
+        ctx!.fill()
+
+        ctx!.beginPath()
+        ctx!.arc(gx, gy, 1.9, 0, Math.PI * 2)
+        ctx!.fillStyle = `rgba(255,255,255,${g.a})`
         ctx!.fill()
       }
 
