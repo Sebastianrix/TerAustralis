@@ -1,5 +1,5 @@
 # TerAustralis Incognita Protocol
-## Litepaper — Living Draft (v0.2.5)
+## Litepaper — Living Draft (v0.3.0)
 
 **First principles: Imagine Starbase Down Under. Build it.**  
 **Discovery Phase — Live**  
@@ -42,7 +42,7 @@ This is a **living document**. We will update it collaboratively as the vision, 
 4. The version number in the header will be updated to reflect the scope of changes.
 
 **Current status**  
-**Version:** v0.2.5  
+**Version:** v0.3.0  
 **Last updated:** June 2026
 
 This lightweight process keeps the document clean while maintaining a clear, auditable evolution of the litepaper.
@@ -77,6 +77,8 @@ Future operations will require disruption-tolerant, trust-minimized systems for 
 
 **Starbase Down Under** — a network of high-cadence launch, recovery, refurbishment, and propellant production sites leveraging Pilbara critical minerals, northern rotational advantages, and southern ocean ranges — developed through genuine partnership with native title holders and Indigenous communities.
 
+**Unifying ethos: one, but many.** The protocol's purpose is to take many independent actors — builders, operators, assets, and nodes — and coordinate them as one coherent system, without erasing their independence. Many participants, one shared and auditable state; many possible paths, one route actually travelled. This "one, but many" idea is the connective tissue across every layer that follows.
+
 **Guiding Principles**
 
 - **Permissionless & Open** — Code, specifications, and data layers are fully auditable and forkable (CC0 ethos where possible), while respecting sovereign regulatory requirements.
@@ -89,7 +91,12 @@ Future operations will require disruption-tolerant, trust-minimized systems for 
 
 ### Protocol Overview
 
-TerAustralis provides a modular stack for multi-domain coordination:
+TerAustralis provides a modular stack for multi-domain coordination, organized around a single first-class primitive — the **Starline**.
+
+**The Starline primitive**  
+A Starline is a verifiable, ordered coordination path connecting nodes, assets, and milestones across Earth → orbit → interplanetary space. Each Starline bundles three fields: a **Route** (an ordered sequence of waypoints such as ISRU sites, depots, pads, recovery zones, and orbital nodes), the **Knowledge** attached to each waypoint (blueprints, signed telemetry, reproducible simulations, capability attestations), and the **Law** that governs passage (the rules, attestations, and consent conditions that determine whether a path is *open*). A Starline is open only when every waypoint's Law conditions are satisfied; otherwise it is blocked at the first unsatisfied waypoint. This makes consent a native property of coordination rather than a bolt-on (see *Incentive & Settlement Layer* and *Key Differentiators*).
+
+*Naming note: the Starline concept is influenced by the idea of knowledge-bearing routes that carry both geography and law. Any cultural framing of the name is treated as provisional and subject to genuine partnership and consent before external publication, consistent with the Indigenous Sovereignty & Consent principle above.*
 
 **1. Coordination Layer**  
 High-performance consensus combining leader-based throughput for terrestrial operations with Byzantine Fault Tolerant (BFT) fallback and space-grade Delay/Disruption Tolerant Networking (DTN). Supports launch scheduling, resource allocation, and swarm robotics coordination, with capacity for auditable records that can assist regulatory transparency and partnership tracking.  
@@ -109,6 +116,13 @@ Utility token for coordination fees, milestone bounties, data contributions, nod
 
 **5. Interplanetary Extension**  
 Native support for store-and-forward messaging and eventual interplanetary nodes using established DTN patterns.
+
+**6. Navigation (Wayfinding) Layer**  
+A southern-hemisphere wayfinding layer that resolves a goal into a concrete, traversable Starline: it filters out any blocked path, then selects and sequences an *open* Starline by latency, cadence, cost, and reliability. Anchored geographically south of the equator (Pilbara minerals, northern rotational corridors, southern ocean ranges, southern polar access) and conceptually in the southern sky. The Navigator never overrides Law or consent conditions — they are inputs to routing, never bypassed.  
+*Why it matters*: This is where "many possible paths" collapse into the one route actually travelled.
+
+**Genesis stewardship**  
+Every decentralized system has a genesis moment that defines its first state, rules, and canonical path. TerAustralis names this role explicitly as a time-bounded **genesis keystone** held in trust during bootstrapping — seeding the origin waypoint, the first canonical Starline, and the initial law/consent conventions. The role carries explicit guardrails (no permanent veto, no privileged economics beyond transparent vested allocations, and never a substitute for custodian consent) and a defined, on-chain path to dissolve into community governance as the network matures.
 
 ### Key Differentiators
 
@@ -133,7 +147,16 @@ Full architecture specification and threat model will be released in the Explora
 
 ### Tokenomics & Incentives (Preliminary)
 
-**$TINC** (provisional) powers coordination fees, milestone bounties, staking, and governance. Design prioritizes real contribution (code, hardware, policy, resource mapping, and physical milestones achieved through proper partnership processes), with vesting and milestone-based unlocks. Detailed mechanisms will be published in a separate whitepaper during the Exploration phase.
+**$TINC** (provisional) powers coordination fees, milestone bounties, staking, and governance. Design prioritizes real contribution (code, hardware, policy, resource mapping, and physical milestones achieved through proper partnership processes), with vesting and milestone-based unlocks.
+
+The current working direction (subject to formal legal/regulatory review, indicative and adjustable):
+
+- **Work-enabling utility** — $TINC is kept to three narrow roles: coordination gas, staking collateral, and governance weight. Token characterization is treated as utility-first, with formal review (including any ASIC / Corporations Act considerations) part of the Exploration phase.
+- **Supply** — a hard cap paired with a milestone-gated **Builder Treasury** that releases as physical/technical milestones are verifiably traversed (not on a calendar), plus recycling of coordination fees back into the treasury so rewards become self-sustaining as network activity grows.
+- **Verified milestones** — rewards release through a claim → staked-attestation → challenge-window → release flow; false attestations are slashable. Genesis relies on a smaller, reputable attestor set that decentralizes over time.
+- **Consent as a precondition to value** — land-use and physical-infrastructure rewards are mechanically blocked until the relevant custodian consent (ILUA / FPIC) is verifiably attested, complemented by a structural allocation designed *with* recognized custodians rather than presumed.
+
+Detailed mechanisms — supply figures, allocation, attestor parameters, and governance model — will be published in a separate whitepaper during the Exploration phase.
 
 ### Roadmap
 
@@ -187,6 +210,13 @@ From the unknown southern land, we launch the known future.
 
 ## Changelog
 
+**v0.3.0** (June 2026)
+- Introduced the **Starline** as a first-class coordination primitive (Route + Knowledge + Law), with consent as a native property of coordination.
+- Added a **Navigation (Wayfinding) Layer** and an explicit, time-bounded **genesis stewardship** role with guardrails and a decentralization path.
+- Added the **"one, but many"** unifying ethos to Vision & Core Values.
+- Expanded **Tokenomics & Incentives** with the current working direction (work-enabling utility, hybrid supply with a milestone-gated Builder Treasury, attestation-based verification, and consent as a precondition to value).
+- Consolidated from the exploratory working drafts in `drafts/` (Starlines, Navigator, genesis stewardship, tokenomics, unifying vision).
+
 **v0.2.5** (June 2026)
 - Updated landing-site documentation (`my-app/README.md`) with real project docs, scripts, and structure.
 - Fixed landing-site footer copyright year (2025 → 2026).
@@ -205,4 +235,4 @@ From the unknown southern land, we launch the known future.
 
 ---
 
-**Document Status**: Living draft (v0.2.5). Ready for iterative updates as we continue developing the vision.
+**Document Status**: Living draft (v0.3.0). Ready for iterative updates as we continue developing the vision.
