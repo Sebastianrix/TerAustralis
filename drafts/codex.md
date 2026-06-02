@@ -5,6 +5,17 @@
 > **Red Dust to Rockets** — the whole thesis in four words: from the red Australian
 > earth beneath our feet to the rockets above. Country to cosmos; cradle to the stars;
 > the Pilbara's red dust carried, by way of water and work, all the way to orbit.
+>
+> **Dreamtime to Starlines** — the companion arc, across *time and knowledge* rather
+> than space: from the oldest mapping tradition on Earth to the newest. It names a
+> **lineage and a debt** — Starlines do not invent the idea that a song can be a map;
+> they inherit it from songline traditions tens of thousands of years deep.
+>
+> ⚠️ *Held with care.* "Dreamtime" / the Dreaming is **sacred** Aboriginal knowledge.
+> This line is recorded as an **acknowledgment of lineage**, and any external or public
+> use is **provisional and consent-pending** with the relevant custodians — never a
+> claim, never branding, removable at their word. (Same standard as the Seven Sisters
+> in `australian-node-network.md` and the Starline naming note in the litepaper.)
 
 **Status:** Working draft — the keeper's map of the whole mythos.
 **Companion to:** every other draft, and the litepaper (root `README.md`).
