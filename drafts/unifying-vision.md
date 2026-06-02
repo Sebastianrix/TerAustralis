@@ -81,6 +81,27 @@ framing of why it matters.
 > only the **theme** is used here — no lyric is reproduced. Any direct lyric in a
 > public artifact would require licensing from the rights holders.
 
+## The spirit of flight
+
+A third theme carries the feeling of the whole project: the conviction that **we are
+meant to fly** — that reaching the sky and the stars is not a privilege for a few but
+something everyone is invited into.
+
+- **Meant to fly.** Starships exist to leave the ground; people exist to reach. The
+  protocol's job is to make that reach *possible and shared*, not gated. This is the
+  joyful, aspirational face of **Multiplanetary Long-Termism**.
+- **Everyone's invited.** The spirit is celebratory and open — a launch the whole
+  crowd is part of, not a closed gantry. That is **permissionless** participation felt
+  as an invitation rather than a permission slip.
+- **Starships fly the Starlines.** The name rhyme is the architecture: starships are
+  what travel the **Starlines**. The aspiration (flight) and the mechanism (the paths)
+  are two halves of one idea.
+
+> *Thematic note:* this "spirit of flight" framing is inspired by the theme of a
+> well-known pop anthem about flight and reaching the stars (Nicki Minaj, "Starships").
+> Only the **theme** is used — no lyric is reproduced — and any direct lyric in a
+> public artifact would require licensing from the rights holders.
+
 ## Suggested uses (in priority of safety)
 
 1. **Internal/thematic framing** — use the *theme* ("one, but many") as the
