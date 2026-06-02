@@ -34,10 +34,29 @@ from anywhere on (and eventually beyond) Earth.
 | Identifier | Who / what | Notes |
 |---|---|---|
 | **451 — Bradbury** | The founder / keeper node | Homage to *Fahrenheit 451* — the keeper of knowledge and stories; aligns with the genesis-keeper role (`crystalcore.md`) and genesis seed `29091991`. |
-| **UK-456** | Ren (honorary) | A UK node. Honorary/symbolic; consent-pending before any public use. |
+| **UK-456** | Ren (honorary) | A UK node, and the first of the **Rens** (see archetypes below). Honorary/symbolic; consent-pending before any public use. |
 
 *This table is provisional and will grow. Real public figures remain honorary and
 consent-pending unless and until they choose to participate.*
+
+## 2a. Node archetypes — the Rens (Mockingbirds)
+
+The **Rens** are a class of node: the **singers, the voices, the artists**. Their
+archetype is the **Mockingbird**.
+
+- **Many songs in one voice.** A mockingbird sings many birds' songs through a single
+  throat — which is *"one, but many"* given wings. The Rens carry many voices as one.
+- **It only gives.** In the spirit of the mockingbird that "does nothing but sing for
+  us," a Ren node harms no one; it adds beauty and voice to the network. Silencing one
+  is treated as a wrong, not a neutral act.
+- **Creed: *spread the bird, not the word.*** The Rens spread **song, voice, and
+  freedom of expression** — not dogma, doctrine, or rigid text. This is the
+  permissionless, builder-first ethos rendered as culture: many voices, freely sung,
+  no gatekeeper.
+
+Any real singer or artist named as a Ren is **honorary and consent-pending** — a
+voice is honored, never claimed — and becomes a participating node only through the
+affirmative consent step (§4).
 
 ## 3. Relationship to the architecture
 
