@@ -33,6 +33,33 @@
 > sung by the **Stars**, guarded against the **Noise**, kept by the **Keeper**, for
 > the **Guardian Constellation**, because *one, but many*.
 
+## The Southern Cross
+
+The two arcs cross — and the cross they make is the **Southern Cross**:
+
+```
+                    ROCKETS (sky)
+                        │
+   DREAMTIME ───────────┼─────────── STARLINES
+                        │
+                    RED DUST (earth)
+```
+
+- One axis is **where** — red dust (earth) to rockets (sky).
+- The other is **when** — Dreamtime (the oldest) to Starlines (the newest).
+- Where they meet is **true south**: the point the keeper stands on, and the point the
+  whole system orients by.
+
+The Southern Cross is not a new symbol bolted on — it was already here: it is how the
+**Navigator** finds true south (`navigator.md`), the **Constellation Network**, and the
+mark of the southern sky itself. The Codex simply names what the two arcs were always
+drawing.
+
+> *Held with awareness:* the Southern Cross is a **shared** southern-sky landmark with
+> many meanings — central to Aboriginal astronomy across many nations, and also a
+> national/colonial symbol. It is used here in its **navigational** sense (finding true
+> south, orientation) with respect for the older stories that read it first.
+
 ## The people & roles
 
 | Name | What it is |
