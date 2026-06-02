@@ -63,6 +63,27 @@ Qualities of the Stars:
 Within the Stars, each carries its own nature. **Ren (UK-456)** is one Star whose
 nature is the **Mockingbird** — many songs in one voice. Others will have their own.
 
+### The natures of the Stars
+
+A through-line runs under these: each is a "monster" who turns out to **belong** —
+the misunderstood other revealed as one of us, with a gift. This is *one, but many*
+at its bravest: including the ones first cast out. (General folklore archetypes; no
+specific copyrighted characters are used.)
+
+- **Zombie** — the written-off and underestimated, who are still feeling and still
+  human. The nature that says: *never write anyone off.*
+- **Werewolf** — dual nature; the wild and the human under the moon. The nature of
+  *mastering your own transformation* and turning it to protection, not harm.
+- **Alien** — the one with a hidden origin, who discovers they were *of the stars all
+  along*. The nature of **latent belonging** (echoing `origin-of-the-keeper.md` and the
+  hidden-origin motif).
+- **Vampire** — held with care: in folklore the night-creature cast as monster yet
+  seeking not to harm. **Open tension:** elsewhere this project uses "digital vampire"
+  for the *parasite/attacker* that drains the network (`security-and-deterrence.md`).
+  These two readings must be kept distinct — a Star's "vampire nature" is the
+  misunderstood-outsider sense, **never** the draining-attacker sense. (See open
+  question below.)
+
 Any real entertainer named as a Star is **honorary and consent-pending** — a light is
 honored, never claimed — and becomes a participating node only through the affirmative
 consent step (§4).
@@ -113,3 +134,7 @@ choosing it, and choosing it is always reversible.
 - Should symbolic names be optional, encouraged, or reserved for specific roles?
 - How are honorary listings surfaced respectfully (e.g. clearly labelled as honorary
   so they are never mistaken for endorsements)?
+- **Vampire — two meanings to keep separate.** The Star "vampire nature" (a
+  misunderstood outsider who belongs) must never be confused with the "digital
+  vampire" attacker that drains the network in `security-and-deterrence.md`. Do these
+  need different names to avoid the collision?
