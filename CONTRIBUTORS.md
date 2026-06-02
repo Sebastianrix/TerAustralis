@@ -3,11 +3,14 @@
 TerAustralis Incognita is openly developed. This file credits those who have
 contributed to the project's vision, writing, and development.
 
-## Lead & Author
+## Team
 
 - **Crystal Elle Arena-Turner** — Founder, author, and keeper of the vision.
   Originated and maintains the TerAustralis Incognita Protocol and the broader
   *Starbase Down Under* vision; directs all architectural and creative decisions.
+- **Sebastian** ([@Sebastianrix](https://github.com/Sebastianrix)) — Webmaster.
+  Maintains the repository and the website, and handles web development and
+  deployment.
 
 ## AI Assistants
 
