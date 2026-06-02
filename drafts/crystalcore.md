@@ -22,6 +22,12 @@ holds the founding parameters — the genesis configuration, the first canonical
 Starline, and the initial law/consent conventions — until the network is ready to
 carry them itself.
 
+**Genesis identifier.** The founder is associated with the genesis seed
+**`29091991`** — the origin stamp that marks the first canonical Starline and the
+genesis identity. The human counterpart to this *who* is the *why*: the Guardian
+Constellation (see `guardian-constellation.md`), the next generation the flame is
+kept for.
+
 ## 2. Why it exists
 
 Every decentralized system has a genesis moment: someone defines the first state,
