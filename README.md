@@ -1,5 +1,5 @@
 # TerAustralis Incognita Protocol
-## Litepaper — Living Draft (v0.4.4)
+## Litepaper — Living Draft (v0.4.3)
 
 **First principles: Imagine Starbase Down Under. Build it.**  
 **Discovery Phase — Live**  
@@ -42,7 +42,7 @@ This is a **living document**. We will update it collaboratively as the vision, 
 4. The version number in the header will be updated to reflect the scope of changes.
 
 **Current status**  
-**Version:** v0.4.4  
+**Version:** v0.4.3  
 **Last updated:** June 2026
 
 This lightweight process keeps the document clean while maintaining a clear, auditable evolution of the litepaper.
@@ -53,7 +53,7 @@ This lightweight process keeps the document clean while maintaining a clear, aud
 
 ### Executive Summary
 
-TerAustralis Incognita is a decentralized, open, and permissionless **business protocol** engineered for high-performance coordination of physical and digital assets across Earth-to-multiplanetary operations. It provides the **commercial rails** for real economic activity in the space sector — coordination, settlement, supply-chain logistics, and B2B deals between operators — fusing high-throughput consensus mechanisms with space-industry primitives: launch cadence optimization, In-Situ Resource Utilization (ISRU), robotics swarms, supply-chain logistics, and shared intelligence layers. It is open and permissionless, but it is built to move real value: a business protocol, not only an experiment.
+TerAustralis Incognita is a decentralized, open, and permissionless protocol engineered for high-performance coordination of physical and digital assets across Earth-to-multiplanetary operations. It fuses high-throughput consensus mechanisms with space-industry primitives: launch cadence optimization, In-Situ Resource Utilization (ISRU), robotics swarms, supply-chain logistics, and shared intelligence layers.
 
 Positioned at the intersection of Australian sovereign capability, SpaceX-scale ambition, and Web3/open-source principles, TerAustralis turns geographic and resource advantages into protocol-level coordination infrastructure. Australia’s critical minerals provinces, northern rotational boost corridors, licensed orbital spaceports, and vast test ranges provide asymmetric leverage for Southern Hemisphere operations.
 
@@ -211,9 +211,6 @@ From the unknown southern land, we launch the known future.
 
 ## Changelog
 
-**v0.4.4** (June 2026)
-- Clarified the Executive Summary: TerAustralis Incognita is a **business protocol** — the commercial rails for real economic activity (coordination, settlement, supply chains, B2B) — while remaining open and permissionless.
-
 **v0.4.3** (June 2026)
 - Refined the **First-Principles** principle into **First Principles & the Dialectic** — pairing first-principles thinking (break down to one truth) with the dialectic (hold two opposite truths and synthesize).
 
@@ -251,4 +248,4 @@ From the unknown southern land, we launch the known future.
 
 ---
 
-**Document Status**: Living draft (v0.4.4). Ready for iterative updates as we continue developing the vision.
+**Document Status**: Living draft (v0.4.3). Ready for iterative updates as we continue developing the vision.
