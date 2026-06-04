@@ -1,8 +1,9 @@
-# Fellow Travelers & Resonances (Working Draft)
+# Resonances — and Their Limits (Working Draft)
 
-**Status:** Working draft (v0.1) — ⚪ Standalone. A place to note *external,
+**Status:** Working draft (v0.2) — ⚪ Standalone. A place to note *external,
 contemporary* movements and works that **rhyme** with TerAustralis — cited as
-**resonance, not authority, and never as a source we derive from**.
+**resonance, not authority, and never as a source we derive from**. The title
+names both halves on purpose: every entry carries a rhyme **and** a boundary.
 **Companion to:** `council.md` (the Fae Council), `unifying-vision.md`
 (one, but many), the litepaper's **Honesty & Truth** principle.
 
@@ -77,11 +78,21 @@ Council's own rule applied to UUCGA itself: *take the resonance, keep your wits.
 
 ---
 
-## Open questions
+## Decisions
 
-- Should this file stay a quiet standalone, or be linked from `drafts/README.md` as a
-  ⚪ Standalone entry (transparency vs. not surfacing external movements)?
-- What is the bar for adding a future entry — genuine structural rhyme, or merely
-  shared vocabulary? (Lean toward the former, to keep the file honest.)
-- Is "Fellow Travelers" the right frame, or does it imply more kinship than intended?
-  Alternatives: "Echoes," "Neighbors," "Resonances (and their limits)."
+The draft's original open questions, now settled:
+
+1. **Linked, not hidden.** This file is listed in `drafts/README.md` as a ⚪ Standalone
+   entry. Transparency is the house style (**Honesty & Truth**); a quiet file that
+   engages an external movement off-index would sit oddly against the project's own
+   auditable-record ethic. We note resonances **in the open**, with the boundaries
+   stated plainly.
+2. **The bar is structural rhyme, not shared vocabulary.** An entry earns its place
+   only when a movement or work rhymes with the architecture *in structure* — a genuine
+   "many → one" gesture, a real parallel of method or stance — not merely because it
+   reuses words like *source*, *angel*, or *oneness*. **Shared vocabulary is noise;
+   shared structure is signal.** When in doubt, leave it out.
+3. **Frame settled: "Resonances — and their limits."** "Fellow Travelers" implied a
+   kinship and agreement this file does not grant (and carries an unrelated historical
+   connotation). The chosen frame names both halves at once — the rhyme *and* the
+   boundary — and every entry is expected to carry both.
