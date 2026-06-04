@@ -15,7 +15,6 @@ FROM mcr.microsoft.com/dotnet/aspnet:9.0-alpine AS final
 WORKDIR /app
 
 # Non-root user for security
-RUN addgroup -S app && adduser -S app -G app
 USER app
 
 COPY --from=build /app/publish .
