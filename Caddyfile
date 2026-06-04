@@ -1,0 +1,3 @@
+TerAustralis.com.au {
+  reverse_proxy localhost:5173
+}
