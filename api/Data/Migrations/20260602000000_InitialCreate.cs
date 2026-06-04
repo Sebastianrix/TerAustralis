@@ -15,7 +15,7 @@ public partial class InitialCreate : Migration
             Name             = t.Column<string>("character varying(256)", maxLength: 256, nullable: true),
             NormalizedName   = t.Column<string>("character varying(256)", maxLength: 256, nullable: true),
             ConcurrencyStamp = t.Column<string>("text", nullable: true),
-        }, c => c.PrimaryKey("PK_AspNetRoles", x => x.Id));
+        }, constraints: c => c.PrimaryKey("PK_AspNetRoles", x => x.Id));
 
         m.CreateTable("AspNetUsers", t => new
         {
@@ -40,7 +40,7 @@ public partial class InitialCreate : Migration
             LockoutEnd           = t.Column<DateTimeOffset>("timestamp with time zone", nullable: true),
             LockoutEnabled       = t.Column<bool>("boolean"),
             AccessFailedCount    = t.Column<int>("integer"),
-        }, c => c.PrimaryKey("PK_AspNetUsers", x => x.Id));
+        }, constraints: c => c.PrimaryKey("PK_AspNetUsers", x => x.Id));
 
         m.CreateTable("AspNetRoleClaims", t => new
         {
@@ -49,7 +49,7 @@ public partial class InitialCreate : Migration
             RoleId     = t.Column<string>("text"),
             ClaimType  = t.Column<string>("text", nullable: true),
             ClaimValue = t.Column<string>("text", nullable: true),
-        }, c =>
+        }, constraints: c =>
         {
             c.PrimaryKey("PK_AspNetRoleClaims", x => x.Id);
             c.ForeignKey("FK_AspNetRoleClaims_AspNetRoles_RoleId", x => x.RoleId, "AspNetRoles", "Id", onDelete: ReferentialAction.Cascade);
@@ -62,7 +62,7 @@ public partial class InitialCreate : Migration
             UserId     = t.Column<string>("text"),
             ClaimType  = t.Column<string>("text", nullable: true),
             ClaimValue = t.Column<string>("text", nullable: true),
-        }, c =>
+        }, constraints: c =>
         {
             c.PrimaryKey("PK_AspNetUserClaims", x => x.Id);
             c.ForeignKey("FK_AspNetUserClaims_AspNetUsers_UserId", x => x.UserId, "AspNetUsers", "Id", onDelete: ReferentialAction.Cascade);
@@ -74,7 +74,7 @@ public partial class InitialCreate : Migration
             ProviderKey         = t.Column<string>("text"),
             ProviderDisplayName = t.Column<string>("text", nullable: true),
             UserId              = t.Column<string>("text"),
-        }, c =>
+        }, constraints: c =>
         {
             c.PrimaryKey("PK_AspNetUserLogins", x => new { x.LoginProvider, x.ProviderKey });
             c.ForeignKey("FK_AspNetUserLogins_AspNetUsers_UserId", x => x.UserId, "AspNetUsers", "Id", onDelete: ReferentialAction.Cascade);
@@ -84,7 +84,7 @@ public partial class InitialCreate : Migration
         {
             UserId = t.Column<string>("text"),
             RoleId = t.Column<string>("text"),
-        }, c =>
+        }, constraints: c =>
         {
             c.PrimaryKey("PK_AspNetUserRoles", x => new { x.UserId, x.RoleId });
             c.ForeignKey("FK_AspNetUserRoles_AspNetRoles_RoleId", x => x.RoleId, "AspNetRoles", "Id", onDelete: ReferentialAction.Cascade);
@@ -97,7 +97,7 @@ public partial class InitialCreate : Migration
             LoginProvider = t.Column<string>("text"),
             Name          = t.Column<string>("text"),
             Value         = t.Column<string>("text", nullable: true),
-        }, c =>
+        }, constraints: c =>
         {
             c.PrimaryKey("PK_AspNetUserTokens", x => new { x.UserId, x.LoginProvider, x.Name });
             c.ForeignKey("FK_AspNetUserTokens_AspNetUsers_UserId", x => x.UserId, "AspNetUsers", "Id", onDelete: ReferentialAction.Cascade);
