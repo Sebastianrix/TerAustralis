@@ -1,0 +1,12 @@
+# Environment / secrets — never commit these
+.env
+.env.local
+.env.*.local
+.env.production
+
+# Keep the template
+!.env.example
+
+# OS junk
+.DS_Store
+Thumbs.db
