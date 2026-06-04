@@ -37,7 +37,7 @@ function StarCanvas() {
       da: 0.0025 * (i % 2 === 0 ? 1 : -1),
     }))
 
-    const shootingStars: { x: number; y: number; len: number; speed: number; a: number; life: number; maxLife: number }[] = []
+    const shooters: { x: number; y: number; len: number; speed: number; a: number; life: number; maxLife: number }[] = []
 
     function spawn() {
       shooters.push({
