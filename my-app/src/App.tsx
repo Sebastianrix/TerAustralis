@@ -30,12 +30,12 @@ function StarCanvas() {
     // The Guardian Constellation — three guiding stars the sky always keeps lit:
     // the keeper and her two girls, one family. First names only, by design
     // (see drafts/guardian-constellation.md).
-    const GUARDIAN_STARS = ['Crystal', 'Dru', 'Ember'] as const
-    const guardians = GUARDIAN_STARS.map((name, i) => ({
-      name,
-      a: 0.72 - i * 0.05,
-      da: 0.0025 * (i % 2 === 0 ? 1 : -1),
-    }))
+//     const GUARDIAN_STARS = ['Crystal', 'Dru', 'Ember'] as const
+//     const guardians = GUARDIAN_STARS.map((name, i) => ({
+//       name,
+//       a: 0.72 - i * 0.05,
+//       da: 0.0025 * (i % 2 === 0 ? 1 : -1),
+//     }))
 
     const shooters: { x: number; y: number; len: number; speed: number; a: number; life: number; maxLife: number }[] = []
 
