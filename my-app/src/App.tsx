@@ -160,7 +160,7 @@ const roadmap = [
   },
   {
     phase: 'Phase 03', name: 'Exploration', badge: 'Q3–Q4 2026', badgeClass: 'badge-soon', active: false,
-    items: ['Testnet launch', 'Pilot integrations', 'Governance experiments', 'Consent-aligned land-use primitives'],
+    items: ['Test launch', 'Pilot integrations', 'Governance experiments', 'Consent-aligned land-use primitives'],
   },
   {
     phase: 'Phase 04', name: 'Settlement', badge: '2027+', badgeClass: 'badge-soon', active: false,
