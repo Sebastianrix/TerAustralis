@@ -114,9 +114,9 @@ describe('Hero section', () => {
     expect(container.querySelector('.hero-subtitle')).toHaveTextContent('Incognita')
   })
 
-  it('renders the live testnet badge', () => {
+  it('renders the discovery phase badge', () => {
     render(<App />)
-    expect(screen.getByText(/now live on testnet/i)).toBeInTheDocument()
+    expect(screen.getByText(/discovery phase — live/i)).toBeInTheDocument()
   })
 
   it('renders the hero description', () => {
@@ -136,9 +136,9 @@ describe('Hero section', () => {
 
 describe('Stats bar', () => {
   it.each([
-    ['10K+', 'community members'],
-    ['99.9%', 'uptime'],
-    ['< 2s', 'finality'],
+    ['0', 'gatekeepers'],
+    ['100%', 'open source'],
+    ['< 2s', 'target finality'],
     ['∞', 'possibilities'],
   ])('renders the %s stat', (value) => {
     render(<App />)

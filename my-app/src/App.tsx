@@ -215,7 +215,7 @@ const roadmap = [
     badge: 'Complete',
     badgeClass: 'badge-done',
     active: false,
-    items: ['Community launch', 'Whitepaper v1', 'Token generation', 'Core team formation'],
+    items: ['Founding vision', 'Litepaper v0.4', 'Community seeding', 'Keeper / steward role'],
   },
   {
     phase: 'Phase 02',
@@ -283,7 +283,7 @@ export default function App() {
 
           <div className="hero-badge">
             <span className="hero-badge-dot" />
-            Now live on testnet
+            Discovery phase — live
           </div>
 
           <h1 className="hero-title">
@@ -320,16 +320,16 @@ export default function App() {
         <div className="stats-bar">
           <div className="stats-inner">
             <div className="stat-item">
-              <div className="stat-value"><span>10K+</span></div>
-              <div className="stat-label">Community Members</div>
+              <div className="stat-value"><span>0</span></div>
+              <div className="stat-label">Gatekeepers</div>
             </div>
             <div className="stat-item">
-              <div className="stat-value"><span>99.9%</span></div>
-              <div className="stat-label">Uptime</div>
+              <div className="stat-value"><span>100%</span></div>
+              <div className="stat-label">Open Source</div>
             </div>
             <div className="stat-item">
               <div className="stat-value"><span>&lt; 2s</span></div>
-              <div className="stat-label">Finality</div>
+              <div className="stat-label">Target Finality</div>
             </div>
             <div className="stat-item">
               <div className="stat-value"><span>∞</span></div>
