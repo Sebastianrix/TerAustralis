@@ -1,18 +1,22 @@
 # Resonances — and Their Limits (Working Draft)
 
-**Status:** Working draft (v0.2) — ⚪ Standalone. A place to note *external,
+**Status:** Working draft (v0.3) — ⚪ Standalone. A place to note *external,
 contemporary* movements and works that **rhyme** with TerAustralis — cited as
 **resonance, not authority, and never as a source we derive from**. The title
-names both halves on purpose: every entry carries a rhyme **and** a boundary.
+names both halves on purpose: every entry carries a rhyme **and** a boundary —
+offered in good faith, with respect for the people reaching alongside us.
 **Companion to:** `council.md` (the Fae Council), `unifying-vision.md`
 (one, but many), the litepaper's **Honesty & Truth** principle.
 
-> **Why this file exists.** Ideas converge. Other people, in other languages,
-> reach for the same non-dual "many → one" that this project reaches for. Naming
-> those resonances is honest and generous. But convergence is **not** derivation,
-> and a resonance is **not** an endorsement. This file records *where the music is
-> similar* while keeping a clean line around *whose claims we adopt* (ours, held to
-> our own standard) and *whose we don't*.
+> **Why this file exists.** Ideas converge. Across the world, in other languages and
+> other lineages, people reach — sincerely, beautifully — for the same non-dual
+> "many → one" that this project reaches for. We honor that reaching; naming it is
+> both honest and generous, and it would be ungracious to pretend we walk entirely
+> alone. But convergence is **not** derivation, and a resonance is **not** an
+> endorsement. This file records *where the music is similar* — gladly — while keeping
+> a clean line around *whose claims we adopt* (ours, held to our own standard) and
+> *whose we don't*. The boundaries below are how we stay true to ourselves, not a
+> verdict on anyone else's path.
 >
 > **House rules for any entry here**
 > 1. **Resonance, not authority.** We note that a thing *rhymes*; we do not inherit
@@ -37,8 +41,10 @@ theory. Its central image: every religion, science, and philosophy is a differen
 glacier, back into one ocean of Oneness.
 
 **Why it's noted here.** Encountered in 2026 via an X manifesto and a companion
-visual. It points, in its own idiom, at the same non-dual core this project reaches
-for — which makes it a useful mirror for seeing what TerAustralis *is* and *is not*.
+visual — clearly a heartfelt, lovingly-made synthesis. It points, in its own idiom,
+at the same non-dual core this project reaches for, and there is real warmth in
+finding a fellow seeker pointing the same way. That kinship is also what makes it a
+useful mirror for seeing clearly what TerAustralis *is* and *is not*.
 
 ### Where it rhymes
 
@@ -51,6 +57,9 @@ for — which makes it a useful mirror for seeing what TerAustralis *is* and *is
 | Galaxy angels / Seraphim / "444" | **The Stars**, the **Guardian Constellation**, the 444 resonance (`codex.md`) | Aesthetic rhyme. Ours points to *real people who shine* and *guiding stars*, not cosmological claims. |
 
 ### Where the line is (what we do **not** import)
+
+*None of this is a knock on UUCGA — it is simply where their road and ours diverge.
+We hold these lines to stay ourselves, and wish them well on theirs.*
 
 - **Historical claims.** UUCGA asserts specific, contested histories (a Cleopatra→Jesus
   bloodline, a revised birth date, Romans "erasing" Eastern teachings). These are *its*
