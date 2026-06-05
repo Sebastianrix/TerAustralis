@@ -1,42 +1,27 @@
-name: Deploy site to GitHub Pages
+name: Deploy
 
 on:
   push:
-    branches: [main]
+    branches: [master]
   workflow_dispatch:
 
-permissions:
-  contents: read
-  pages: write
-  id-token: write
-
-concurrency:
-  group: pages
-  cancel-in-progress: true
-
 jobs:
-  # The production site is the static multi-page build in site/ (plain
-  # HTML/CSS/JS, no build step). The legacy React app in my-app/ is retired
-  # from production but kept in the repo.
-  build:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v4
-      # NOTE: GitHub Pages must be enabled once by a repo admin/owner:
-      # Settings -> Pages -> Build and deployment -> Source: "GitHub Actions".
-      # The workflow token cannot create the Pages site itself
-      # ("Resource not accessible by integration"), so this is a one-time
-      # manual step. After that, this workflow deploys site/ on every push.
-      - uses: actions/upload-pages-artifact@v3
-        with:
-          path: site
-
   deploy:
-    needs: build
-    runs-on: ubuntu-latest
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: self-hosted
     steps:
-      - id: deployment
-        uses: actions/deploy-pages@v4
+      - name: Checkout
+        uses: actions/checkout@v5
+
+      - name: Set up Node
+        uses: actions/setup-node@v5
+        with:
+          node-version: '22'
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Build
+        run: npm run build
+
+      # - name: Deploy
+      #   run: <deploy command — we add this once the build is green>
