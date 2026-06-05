@@ -129,4 +129,9 @@ app.UseAuthentication();
 app.UseAuthorization();
 app.MapControllers();
 
+// ── Health check (anonymous) ──────────────────────────────────────────────────
+// Lightweight liveness endpoint for the deploy health check / load balancers.
+app.MapGet("/health", () => Results.Ok(new { status = "healthy" }))
+   .AllowAnonymous();
+
 app.Run();
