@@ -22,12 +22,11 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      # Enable GitHub Pages (source = GitHub Actions) via the workflow token,
-      # so deployment does not depend on the repo Settings UI being toggled
-      # manually (which requires admin access the deploying account may lack).
-      - uses: actions/configure-pages@v5
-        with:
-          enablement: true
+      # NOTE: GitHub Pages must be enabled once by a repo admin/owner:
+      # Settings -> Pages -> Build and deployment -> Source: "GitHub Actions".
+      # The workflow token cannot create the Pages site itself
+      # ("Resource not accessible by integration"), so this is a one-time
+      # manual step. After that, this workflow deploys site/ on every push.
       - uses: actions/upload-pages-artifact@v3
         with:
           path: site
