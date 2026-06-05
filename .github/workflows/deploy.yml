@@ -26,7 +26,6 @@ jobs:
           fi
 
       - name: Deploy with Docker Compose
-        working-directory: /tmp/workspace/Sebastianrix/TerAustralis
         run: |
           set -euo pipefail
           if docker compose version >/dev/null 2>&1; then
