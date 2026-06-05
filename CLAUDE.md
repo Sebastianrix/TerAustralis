@@ -54,7 +54,11 @@ Body font: **Inter**. Heading font: **Space Grotesk**.
 `StarCanvas` hard-codes three named guardian stars (`Crystal`, `Dru`, `Ember`) at fixed relative positions on the canvas. The names and their placement are intentional and personal — see `drafts/guardian-constellation.md` before changing them.
 
 ### Deployment
-GitHub Actions (`.github/workflows/deploy.yml`) builds and deploys to GitHub Pages on every push to `main`. The workflow runs `npm ci && npm run build` inside `my-app/` and uploads `my-app/dist/`. The custom domain is set via `my-app/public/CNAME`.
+GitHub Actions (`.github/workflows/deploy.yml`) deploys to GitHub Pages on every push to `main`.
+
+**The production site is the static multi-page site in `site/`** (plain HTML/CSS/JS, no build step) — the workflow uploads `site/` directly. The custom domain (`teraustralis.com.au`) is carried by `site/CNAME`. See `site/README.md` for structure.
+
+The React app in `my-app/` is **retired from production** but kept in the repo (its `npm` scripts and `my-app/public/CNAME` remain for local/historical use; they no longer drive the live site).
 
 ---
 
