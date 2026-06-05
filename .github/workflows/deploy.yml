@@ -41,5 +41,23 @@ jobs:
         run: |
           set -euo pipefail
           command -v curl >/dev/null 2>&1
-          curl -fsS http://localhost:8081/ >/dev/null
-          curl -fsS http://localhost:5000/health >/dev/null || curl -fsS http://localhost:5000/ >/dev/null
+          if docker compose version >/dev/null 2>&1; then DC="docker compose"; else DC="docker-compose"; fi
+
+          # Containers need time to build/start (the API also runs EF Core
+          # migrations on boot), so wait/retry instead of failing instantly.
+          wait_for() {
+            name="$1"; url="$2"; svc="$3"
+            for i in $(seq 1 30); do
+              if curl -fsS "$url" >/dev/null 2>&1; then
+                echo "✓ $name healthy ($url)"; return 0
+              fi
+              echo "… waiting for $name ($i/30): $url"; sleep 2
+            done
+            echo "✗ $name did not become healthy: $url"
+            echo "----- last logs for '$svc' -----"
+            $DC logs --tail=80 "$svc" 2>&1 || true
+            return 1
+          }
+
+          wait_for "web" "http://localhost:8081/" "web"
+          wait_for "api" "http://localhost:5000/health" "api"
