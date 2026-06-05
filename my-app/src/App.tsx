@@ -216,7 +216,7 @@ export default function App() {
           </h1>
           <p className="hero-subtitle">Incognita</p>
 
-          <p className="hero-tagline">Starbase Down Under — Permissionless (second update test).</p>
+          <p className="hero-tagline">Starbase Down Under — Permissionless.</p>
 
           <p className="hero-description">
             The coordination layer for high-cadence Earth-to-multiplanetary operations.
