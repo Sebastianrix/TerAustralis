@@ -1,0 +1,231 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vision — TerAustralis Incognita</title>
+  <meta name="description" content="The vision behind Starbase Down Under: why the Pilbara, the strategic pillars, and an interactive map and 3D launch/reentry visualization with real-time telemetry." />
+  <meta name="theme-color" content="#060814" />
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+        integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/cesium@1.118.0/Build/Cesium/Widgets/widgets.css" />
+  <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+<body data-page="vision">
+  <div id="site-nav"></div>
+
+  <!-- ── Page head ── -->
+  <section class="page-head">
+    <div class="hero-orbs" aria-hidden="true"><span class="orb orb-1"></span><span class="orb orb-3"></span></div>
+    <div class="wrap">
+      <div class="tag">The Vision</div>
+      <h1>Coordinating the Southern frontier.</h1>
+      <p>Why the Pilbara, what we are building, and where it could happen — explored on the map and in 3D.</p>
+    </div>
+  </section>
+
+  <!-- ── About ── -->
+  <section class="section section--tight">
+    <div class="wrap reveal">
+      <div class="tag">About</div>
+      <h2 class="section-title">The coordination layer for a multiplanetary age.</h2>
+      <div class="prose" style="max-width:780px">
+        <p>
+          TerAustralis Incognita is a decentralized, open, and permissionless protocol engineered for
+          high-performance coordination of physical and digital assets across Earth-to-multiplanetary
+          operations. It fuses high-throughput consensus with space-industry primitives: launch cadence
+          optimization, In-Situ Resource Utilization (ISRU), robotics swarms, supply-chain logistics,
+          and shared intelligence layers.
+        </p>
+        <p>
+          Positioned at the intersection of Australian sovereign capability, SpaceX-scale ambition, and
+          Web3/open-source principles, TerAustralis turns geographic and resource advantages into
+          protocol-level coordination infrastructure. Australia's critical-minerals provinces, northern
+          rotational boost corridors, licensed orbital spaceports, and vast test ranges provide asymmetric
+          leverage for the Southern Hemisphere.
+        </p>
+        <p>
+          We complement Australia's sovereign frameworks — the <strong>Space (Launches and Returns) Act
+          2018</strong> and native-title processes under the <strong>Native Title Act 1993</strong> — by
+          providing transparent, auditable coordination tools that support safety, multi-party
+          collaboration, and consent-aligned partnership. We are not a launch company. We are the
+          coordination layer that makes Starbase-scale operations faster, more permissionless, and more abundant.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Why the Pilbara ── -->
+  <section class="section section--tight">
+    <div class="wrap reveal">
+      <div class="tag">Why the Pilbara?</div>
+      <h2 class="section-title">Red dust, rich ground, open skies.</h2>
+      <div class="grid grid-3 mt-m">
+        <div class="card"><div class="card-icon">⛏️</div><h3>Critical Minerals</h3>
+          <p>Iron ore, lithium, and rare-earth provinces — the raw inputs for future propellant,
+             habitat, and ISRU supply chains, right where the work happens.</p></div>
+        <div class="card"><div class="card-icon">🛰️</div><h3>Launch Geography</h3>
+          <p>Northern rotational boost corridors and access to southern ocean ranges for recovery,
+             with low population density beneath flight paths.</p></div>
+        <div class="card"><div class="card-icon">🗺️</div><h3>Vast Test Ranges</h3>
+          <p>Some of the largest sparsely-populated landscapes on Earth — room to test, recover,
+             and iterate at high cadence.</p></div>
+        <div class="card"><div class="card-icon">⚖️</div><h3>Sovereign Frameworks</h3>
+          <p>Established civil-space regulation under the Space (Launches and Returns) Act 2018,
+             administered by the Australian Space Agency.</p></div>
+        <div class="card"><div class="card-icon">🌏</div><h3>Southern Stability</h3>
+          <p>Political stability and deep logistics infrastructure — ports, power, and people —
+             already serving one of the world's great mining regions.</p></div>
+        <div class="card"><div class="card-icon">◈</div><h3>Partnership First</h3>
+          <p>Any physical presence is provisional and consent-pending — developed through genuine
+             partnership with native title holders and Prescribed Body Corporates.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Strategic Pillars ── -->
+  <section class="section section--tight">
+    <div class="wrap reveal">
+      <div class="tag">Strategic Pillars</div>
+      <h2 class="section-title">What holds the protocol up.</h2>
+      <div class="mt-m" style="max-width:880px">
+        <div class="pillar"><div class="pillar-num">01</div><div>
+          <h3>Honesty &amp; Truth</h3>
+          <p>Truth made structural, not secret. Claims are verifiable (signed telemetry, attestations,
+             reproducible simulations), the record is transparent, and honesty is the most rewarding strategy.</p></div></div>
+        <div class="pillar"><div class="pillar-num">02</div><div>
+          <h3>Indigenous Sovereignty &amp; Consent</h3>
+          <p>Consent understood as an affirmation — a freely-given <em>yes</em> worth waiting for —
+             encoded natively so coordination proceeds because consent is present, never by bypassing it.</p></div></div>
+        <div class="pillar"><div class="pillar-num">03</div><div>
+          <h3>Permissionless &amp; Open</h3>
+          <p>Code, specifications, and data layers are fully auditable and forkable (CC0 ethos where
+             possible), while respecting sovereign regulatory requirements.</p></div></div>
+        <div class="pillar"><div class="pillar-num">04</div><div>
+          <h3>Builder-First Incentives</h3>
+          <p>Rewards flow to those who ship hardware, code, policy, or capital that advances physical
+             milestones through ethical, consent-aligned processes.</p></div></div>
+        <div class="pillar"><div class="pillar-num">05</div><div>
+          <h3>Multiplanetary Long-Termism</h3>
+          <p>Earth is the cradle. The protocol is designed from day one for interplanetary
+             delay-tolerant networking and eventual settlement.</p></div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Proposed Location & Launch/Reentry Capability ── -->
+  <section class="section">
+    <div class="wrap reveal">
+      <div class="tag">Proposed Location &amp; Launch / Reentry Capability</div>
+      <h2 class="section-title">Where it could happen.</h2>
+      <p class="section-desc">A conceptual coastal-Pilbara site, shown on an interactive 2D map and an
+         advanced 3D globe with animated launch and atmospheric reentry profiles.</p>
+    </div>
+
+    <!-- 2D Leaflet map -->
+    <div class="wrap mt-m reveal">
+      <div class="map-shell">
+        <div class="map-controls">
+          <button id="btn-sat" class="active">Satellite</button>
+          <button id="btn-street">Street</button>
+        </div>
+        <div id="leaflet-map"></div>
+      </div>
+      <p class="disclaimer">Site location is illustrative and conceptual — subject to feasibility studies,
+        regulatory approval under the Space (Launches and Returns) Act 2018, and consent-based partnership
+        with native title holders. Map imagery © Esri / OpenStreetMap contributors.</p>
+    </div>
+
+    <!-- 3D Cesium visualization -->
+    <div class="wrap mt-l reveal">
+      <h3 style="font-size:1.4rem;margin-bottom:6px">Advanced 3D Visualization</h3>
+      <p class="muted" style="margin-bottom:18px">Toggle between launch and reentry. Watch the telemetry —
+        the heat-flux readout and the trajectory line intensify toward red at peak thermal loading.</p>
+
+      <div class="cesium-block">
+        <div id="cesiumContainer"></div>
+
+        <!-- mode toggle -->
+        <div class="viz-modes">
+          <button id="mode-launch" class="active">Launch Trajectory</button>
+          <button id="mode-reentry">Atmospheric Reentry</button>
+        </div>
+
+        <!-- telemetry overlay -->
+        <div class="telemetry">
+          <div class="telemetry-head">
+            <span class="t-title">Telemetry</span>
+            <span class="t-phase" id="tPhase">Launch</span>
+          </div>
+          <div class="t-row"><span class="t-label">Velocity</span>
+            <span class="t-value" id="tVel">0.00 <span class="unit">km/s</span></span></div>
+          <div class="t-row"><span class="t-label">Acceleration</span>
+            <span class="t-value" id="tAcc">0.0 <span class="unit">g</span></span></div>
+          <div class="t-row"><span class="t-label">Dynamic Pressure</span>
+            <span class="t-value" id="tQ">0.0 <span class="unit">kPa</span></span></div>
+          <div class="t-row t-heat" id="tHeatRow"><span class="t-label">Heat Flux</span>
+            <span class="t-value" id="tHeat">0 <span class="unit">W/cm²</span></span></div>
+          <div class="t-row"><span class="t-label">Altitude</span>
+            <span class="t-value" id="tAlt">0.0 <span class="unit">km</span></span></div>
+          <div class="t-row"><span class="t-label">Time Elapsed</span>
+            <span class="t-value" id="tTime">00:00 <span class="unit">mm:ss</span></span></div>
+          <div class="t-progress"><span id="tProg"></span></div>
+        </div>
+
+        <!-- playback controls -->
+        <div class="viz-controls">
+          <button id="vizPlay" aria-label="Play / Pause">▶</button>
+          <button id="vizReset" aria-label="Reset">Reset</button>
+          <span class="speed-group">
+            <span class="lbl">Speed</span>
+            <button class="speed" data-speed="1">1×</button>
+            <button class="speed" data-speed="2">2×</button>
+            <button class="speed active" data-speed="4">4×</button>
+            <button class="speed" data-speed="8">8×</button>
+          </span>
+        </div>
+
+        <!-- loading -->
+        <div class="viz-loading" id="vizLoading">
+          <div style="text-align:center"><div class="spinner"></div><p>Loading 3D globe…</p></div>
+        </div>
+      </div>
+
+      <p class="disclaimer">
+        <strong style="color:var(--text-h)">Conceptual visualization.</strong> Trajectories and all
+        telemetry values (velocity, acceleration, dynamic pressure, heat flux, altitude) are parametric
+        illustrations for communication purposes — not real flight data, engineering analysis, or a
+        commitment to any specific vehicle, profile, or site.
+      </p>
+    </div>
+  </section>
+
+  <!-- ── CTA ── -->
+  <section class="cta">
+    <div class="wrap">
+      <h2>From the unknown southern land, the known future.</h2>
+      <p>Explore the roadmap, meet the team, or reach out to help build Starbase Down Under.</p>
+      <div class="cta-actions">
+        <a class="btn btn-primary" href="roadmap.html">See the Roadmap →</a>
+        <a class="btn btn-ghost" href="contact.html">Get Involved</a>
+      </div>
+    </div>
+  </section>
+
+  <div id="site-footer"></div>
+
+  <!-- libraries -->
+  <script>window.CESIUM_BASE_URL = 'https://cdn.jsdelivr.net/npm/cesium@1.118.0/Build/Cesium/';</script>
+  <script src="https://cdn.jsdelivr.net/npm/cesium@1.118.0/Build/Cesium/Cesium.js"></script>
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+          integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+  <!-- site scripts -->
+  <script src="assets/js/components.js"></script>
+  <script src="assets/js/map.js"></script>
+  <script src="assets/js/cesium-viz.js"></script>
+</body>
+</html>
