@@ -2,7 +2,7 @@ name: Deploy
 
 on:
   push:
-    branches: [master]
+    branches: [main]
   workflow_dispatch:
 
 jobs:
@@ -12,16 +12,35 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v5
 
-      - name: Set up Node
-        uses: actions/setup-node@v5
-        with:
-          node-version: '22'
+      - name: Preflight checks
+        run: |
+          set -euo pipefail
+          docker --version
+          if docker compose version >/dev/null 2>&1; then
+            docker compose version
+          elif docker-compose --version >/dev/null 2>&1; then
+            docker-compose --version
+          else
+            echo "Docker Compose is not installed on this runner."
+            exit 1
+          fi
 
-      - name: Install dependencies
-        run: npm ci
+      - name: Deploy with Docker Compose
+        working-directory: /tmp/workspace/Sebastianrix/TerAustralis
+        run: |
+          set -euo pipefail
+          if docker compose version >/dev/null 2>&1; then
+            DC="docker compose"
+          else
+            DC="docker-compose"
+          fi
+          $DC pull --ignore-pull-failures
+          $DC up -d --build --remove-orphans
+          $DC ps
 
-      - name: Build
-        run: npm run build
-
-      # - name: Deploy
-      #   run: <deploy command — we add this once the build is green>
+      - name: Post-deploy health check
+        run: |
+          set -euo pipefail
+          command -v curl >/dev/null 2>&1
+          curl -fsS http://localhost:8081/ >/dev/null
+          curl -fsS http://localhost:5000/health >/dev/null || curl -fsS http://localhost:5000/ >/dev/null

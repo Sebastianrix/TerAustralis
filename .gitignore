@@ -10,3 +10,7 @@
 # OS junk
 .DS_Store
 Thumbs.db
+
+# Local deploy keys (must stay outside repo workspace)
+github_deploy_key
+github_deploy_key.pub
