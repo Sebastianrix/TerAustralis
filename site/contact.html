@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact — TerAustralis Incognita</title>
+  <meta name="description" content="Get in touch with TerAustralis Incognita — Starbase Down Under. Contact details and a message form for aligned builders, partners, and futurists." />
+  <meta name="theme-color" content="#060814" />
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+<body data-page="contact">
+  <div id="site-nav"></div>
+
+  <section class="page-head">
+    <div class="hero-orbs" aria-hidden="true"><span class="orb orb-1"></span><span class="orb orb-3"></span></div>
+    <div class="wrap">
+      <div class="tag">Contact</div>
+      <h1>Let's build it.</h1>
+      <p>If you align with Starbase Down Under — through code, steel, policy, capital, or first-principles
+         energy — we'd love to hear from you.</p>
+    </div>
+  </section>
+
+  <section class="section section--tight">
+    <div class="wrap">
+      <div class="contact-grid">
+
+        <!-- details -->
+        <div class="reveal">
+          <h2 style="font-size:1.4rem;margin-bottom:6px">Reach out</h2>
+          <p class="muted" style="margin-bottom:14px">We read everything. Founder and webmaster respond personally.</p>
+          <div class="contact-line"><span class="ci">✉️</span><div>
+            <div class="cl">Email</div><div class="cv">hello@teraustralis.com.au</div></div></div>
+          <div class="contact-line"><span class="ci">𝕏</span><div>
+            <div class="cl">Twitter / X</div>
+            <div class="cv"><a href="https://x.com/TerAustralis" target="_blank" rel="noreferrer">@TerAustralis</a></div></div></div>
+          <div class="contact-line"><span class="ci">⌥</span><div>
+            <div class="cl">GitHub</div>
+            <div class="cv"><a href="https://github.com/sebastianrix/teraustralis" target="_blank" rel="noreferrer">sebastianrix/teraustralis</a></div></div></div>
+          <div class="contact-line"><span class="ci">📍</span><div>
+            <div class="cl">Region</div><div class="cv">Pilbara, Western Australia · Southern Hemisphere</div></div></div>
+          <div class="contact-line"><span class="ci">✦</span><div>
+            <div class="cl">Status</div><div class="cv">Discovery Phase — open to aligned contributors</div></div></div>
+        </div>
+
+        <!-- form placeholder -->
+        <div class="reveal">
+          <div class="card" style="border-color:var(--border-2)">
+            <h2 style="font-size:1.4rem;margin-bottom:16px">Send a message</h2>
+            <form id="contactForm" novalidate>
+              <div class="field">
+                <label for="cname">Name</label>
+                <input id="cname" name="name" type="text" placeholder="Your name" required />
+              </div>
+              <div class="field">
+                <label for="cemail">Email</label>
+                <input id="cemail" name="email" type="email" placeholder="you@example.com" required />
+              </div>
+              <div class="field">
+                <label for="crole">I'm reaching out as</label>
+                <select id="crole" name="role">
+                  <option>Engineer / Builder</option>
+                  <option>Aerospace / Space industry</option>
+                  <option>Critical minerals / Energy</option>
+                  <option>Indigenous partner / Community</option>
+                  <option>Policy / Regulatory</option>
+                  <option>Investor / Capital</option>
+                  <option>Other</option>
+                </select>
+              </div>
+              <div class="field">
+                <label for="cmsg">Message</label>
+                <textarea id="cmsg" name="message" placeholder="Tell us how you'd like to be involved…" required></textarea>
+              </div>
+              <button class="btn btn-primary" type="submit">Send Message →</button>
+              <p class="form-note">This is a front-end placeholder — no message is transmitted or stored yet.
+                A backend / form handler will be connected during a later phase.</p>
+              <div class="form-success" id="formSuccess">
+                Thanks — your message has been captured locally. (Demo only; nothing was sent.)
+              </div>
+            </form>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <div id="site-footer"></div>
+  <script src="assets/js/components.js" defer></script>
+  <script src="assets/js/ui.js" defer></script>
+</body>
+</html>
