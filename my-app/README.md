@@ -3,7 +3,7 @@
 The marketing / landing site for the **TerAustralis Incognita Protocol**
 ("Starbase Down Under"). Built with React 19, TypeScript, and Vite.
 
-> For the protocol vision and litepaper, see the [root README](../README.md).
+> For the protocol vision and litepaper, see the [litepaper](../LITEPAPER.md).
 
 ## What's here
 
