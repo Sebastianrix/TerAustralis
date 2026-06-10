@@ -1,0 +1,11 @@
+/* PLACEHOLDER — to be replaced with the handover HomePage.css.
+   Brand: Deep Navy #13294B, Steel #AEBCCD, Electric Violet #8E5BFF (accent only).
+   Fonts (Aldrich, IBM Plex Sans, IBM Plex Mono) load via @import here. */
+.home {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+}

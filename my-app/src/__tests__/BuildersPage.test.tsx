@@ -1,6 +1,7 @@
 import { render, screen, within } from '@testing-library/react'
 import { describe, it, expect, beforeAll, vi } from 'vitest'
-import App from '../App'
+import { MemoryRouter } from 'react-router-dom'
+import BuildersPage from '../BuildersPage'
 
 // jsdom has no canvas rendering — provide minimal stubs so StarCanvas'
 // useEffect doesn't bail out or throw.
@@ -28,25 +29,33 @@ beforeAll(() => {
   vi.stubGlobal('cancelAnimationFrame', mockCancelAnimationFrame)
 })
 
+function renderPage() {
+  return render(
+    <MemoryRouter initialEntries={['/builders']}>
+      <BuildersPage />
+    </MemoryRouter>,
+  )
+}
+
 // ---------------------------------------------------------------------------
 // StarCanvas lifecycle
 // ---------------------------------------------------------------------------
 
 describe('StarCanvas', () => {
   it('renders a canvas element', () => {
-    const { container } = render(<App />)
+    const { container } = renderPage()
     expect(container.querySelector('canvas.stars-canvas')).toBeInTheDocument()
   })
 
   it('cancels the animation frame on unmount', () => {
-    const { unmount } = render(<App />)
+    const { unmount } = renderPage()
     unmount()
     expect(mockCancelAnimationFrame).toHaveBeenCalledWith(42)
   })
 
   it('removes the resize event listener on unmount', () => {
     const spy = vi.spyOn(window, 'removeEventListener')
-    const { unmount } = render(<App />)
+    const { unmount } = renderPage()
     unmount()
     expect(spy).toHaveBeenCalledWith('resize', expect.any(Function))
     spy.mockRestore()
@@ -59,24 +68,36 @@ describe('StarCanvas', () => {
 
 describe('Navigation', () => {
   it('renders a <nav> landmark', () => {
-    render(<App />)
+    renderPage()
     expect(screen.getByRole('navigation')).toBeInTheDocument()
   })
 
-  it('Features link points to #features', () => {
-    render(<App />)
+  it('logo links back to the homepage', () => {
+    renderPage()
     const nav = screen.getByRole('navigation')
-    expect(within(nav).getByRole('link', { name: 'Features' })).toHaveAttribute('href', '#features')
+    expect(within(nav).getByRole('link', { name: /TerAustralis/ })).toHaveAttribute('href', '/')
+  })
+
+  it('Protocol link points to #protocol', () => {
+    renderPage()
+    const nav = screen.getByRole('navigation')
+    expect(within(nav).getByRole('link', { name: 'Protocol' })).toHaveAttribute('href', '#protocol')
+  })
+
+  it('Values link points to #values', () => {
+    renderPage()
+    const nav = screen.getByRole('navigation')
+    expect(within(nav).getByRole('link', { name: 'Values' })).toHaveAttribute('href', '#values')
   })
 
   it('Roadmap link points to #roadmap', () => {
-    render(<App />)
+    renderPage()
     const nav = screen.getByRole('navigation')
     expect(within(nav).getByRole('link', { name: 'Roadmap' })).toHaveAttribute('href', '#roadmap')
   })
 
   it('Community link points to X.com', () => {
-    render(<App />)
+    renderPage()
     expect(screen.getByRole('link', { name: 'Community' })).toHaveAttribute(
       'href',
       'https://x.com/TerAustralis',
@@ -90,7 +111,7 @@ describe('Navigation', () => {
 
 describe('External link safety', () => {
   it('every target="_blank" link carries rel="noreferrer"', () => {
-    const { container } = render(<App />)
+    const { container } = renderPage()
     const externalLinks = container.querySelectorAll('a[target="_blank"]')
     expect(externalLinks.length).toBeGreaterThan(0)
     externalLinks.forEach((link) => {
@@ -105,27 +126,27 @@ describe('External link safety', () => {
 
 describe('Hero section', () => {
   it('renders the h1 with the brand name', () => {
-    render(<App />)
+    renderPage()
     expect(screen.getByRole('heading', { level: 1 })).toHaveTextContent('TerAustralis')
   })
 
   it('renders the Incognita subtitle', () => {
-    const { container } = render(<App />)
+    const { container } = renderPage()
     expect(container.querySelector('.hero-subtitle')).toHaveTextContent('Incognita')
   })
 
-  it('renders the live testnet badge', () => {
-    render(<App />)
-    expect(screen.getByText(/now live on testnet/i)).toBeInTheDocument()
+  it('renders the Discovery phase badge', () => {
+    renderPage()
+    expect(screen.getByText(/Discovery Phase — Live/i)).toBeInTheDocument()
   })
 
   it('renders the hero description', () => {
-    render(<App />)
-    expect(screen.getByText(/mapping the unknown frontier/i)).toBeInTheDocument()
+    renderPage()
+    expect(screen.getByText(/coordination layer for high-cadence/i)).toBeInTheDocument()
   })
 
   it('renders the "Explore the Protocol" CTA', () => {
-    render(<App />)
+    renderPage()
     expect(screen.getByText(/explore the protocol/i)).toBeInTheDocument()
   })
 })
@@ -136,41 +157,72 @@ describe('Hero section', () => {
 
 describe('Stats bar', () => {
   it.each([
-    ['10K+', 'community members'],
-    ['99.9%', 'uptime'],
-    ['< 2s', 'finality'],
-    ['∞', 'possibilities'],
+    ['v0.2.4', 'litepaper version'],
+    ['< 1s', 'target finality'],
+    ['5', 'protocol layers'],
+    ['$TINC', 'native token'],
   ])('renders the %s stat', (value) => {
-    render(<App />)
-    expect(screen.getByText(value)).toBeInTheDocument()
+    const { container } = renderPage()
+    const statsBar = container.querySelector('.stats-bar')
+    expect(statsBar).toHaveTextContent(value)
   })
 })
 
 // ---------------------------------------------------------------------------
-// Features section
+// Protocol stack section
 // ---------------------------------------------------------------------------
 
-describe('Features section', () => {
-  it('renders exactly 6 feature cards', () => {
-    const { container } = render(<App />)
-    expect(container.querySelectorAll('.feature-card')).toHaveLength(6)
+describe('Protocol stack section', () => {
+  it('renders exactly 5 stack layers', () => {
+    const { container } = renderPage()
+    expect(container.querySelectorAll('.stack-item')).toHaveLength(5)
   })
 
   it.each([
-    'Decentralized Security',
-    'Frontier Exploration',
-    'Constellation Network',
-    'Blazing Performance',
-    'Open & Permissionless',
-    'Deep Research',
-  ])('renders the "%s" feature card', (title) => {
-    render(<App />)
+    'Coordination Layer',
+    'Physical Asset Primitives',
+    'Data & Intelligence Layer',
+    'Incentive & Settlement Layer',
+    'Interplanetary Extension',
+  ])('renders the "%s" layer', (title) => {
+    renderPage()
     expect(screen.getByText(title)).toBeInTheDocument()
   })
 
-  it('every feature card has a non-empty description', () => {
-    const { container } = render(<App />)
-    container.querySelectorAll('.feature-desc').forEach((desc) => {
+  it('every stack layer has a non-empty description', () => {
+    const { container } = renderPage()
+    container.querySelectorAll('.stack-desc').forEach((desc) => {
+      expect((desc.textContent ?? '').trim().length).toBeGreaterThan(0)
+    })
+  })
+})
+
+// ---------------------------------------------------------------------------
+// Values section
+// ---------------------------------------------------------------------------
+
+describe('Values section', () => {
+  it('renders exactly 7 value cards', () => {
+    const { container } = renderPage()
+    expect(container.querySelectorAll('.value-card')).toHaveLength(7)
+  })
+
+  it.each([
+    'Permissionless & Open',
+    'Indigenous Sovereignty & Consent',
+    'Blazing Performance',
+    'First-Principles',
+    'Southern Advantage',
+    'Builder-First',
+    'Multiplanetary Long-Termism',
+  ])('renders the "%s" value card', (title) => {
+    renderPage()
+    expect(screen.getByText(title)).toBeInTheDocument()
+  })
+
+  it('every value card has a non-empty description', () => {
+    const { container } = renderPage()
+    container.querySelectorAll('.value-desc').forEach((desc) => {
       expect((desc.textContent ?? '').trim().length).toBeGreaterThan(0)
     })
   })
@@ -181,44 +233,44 @@ describe('Features section', () => {
 // ---------------------------------------------------------------------------
 
 describe('Roadmap section', () => {
-  it('renders exactly 4 roadmap phases', () => {
-    const { container } = render(<App />)
-    expect(container.querySelectorAll('.roadmap-phase')).toHaveLength(4)
+  it('renders exactly 5 roadmap phases', () => {
+    const { container } = renderPage()
+    expect(container.querySelectorAll('.roadmap-item')).toHaveLength(5)
   })
 
-  it.each(['Genesis', 'Discovery', 'Expansion', 'Incognita'])(
+  it.each(['Genesis', 'Discovery', 'Exploration', 'Settlement', 'Expansion'])(
     'renders the "%s" phase',
     (name) => {
-      const { container } = render(<App />)
-      const roadmapGrid = container.querySelector('.roadmap-grid')
-      expect(roadmapGrid).toHaveTextContent(name)
+      const { container } = renderPage()
+      const roadmapList = container.querySelector('.roadmap-list')
+      expect(roadmapList).toHaveTextContent(name)
     },
   )
 
   it('exactly one phase is marked active', () => {
-    const { container } = render(<App />)
-    expect(container.querySelectorAll('.phase-active')).toHaveLength(1)
+    const { container } = renderPage()
+    expect(container.querySelectorAll('.rm-active')).toHaveLength(1)
   })
 
   it('the Discovery phase is the active one', () => {
-    render(<App />)
-    expect(screen.getByText('Discovery').closest('.roadmap-phase')).toHaveClass('phase-active')
+    renderPage()
+    expect(screen.getByText('Discovery').closest('.roadmap-item')).toHaveClass('rm-active')
   })
 
   it('Phase 01 (Genesis) shows the "Complete" badge', () => {
-    render(<App />)
+    renderPage()
     expect(screen.getByText('Complete')).toBeInTheDocument()
   })
 
   it('Phase 02 (Discovery) shows the "Live Now" badge', () => {
-    render(<App />)
+    renderPage()
     expect(screen.getByText('Live Now')).toBeInTheDocument()
   })
 
   it('every phase has at least one checklist item', () => {
-    const { container } = render(<App />)
-    container.querySelectorAll('.roadmap-phase').forEach((phase) => {
-      expect(phase.querySelectorAll('.phase-items li').length).toBeGreaterThan(0)
+    const { container } = renderPage()
+    container.querySelectorAll('.roadmap-item').forEach((phase) => {
+      expect(phase.querySelectorAll('.rm-items li').length).toBeGreaterThan(0)
     })
   })
 })
@@ -229,12 +281,12 @@ describe('Roadmap section', () => {
 
 describe('CTA section', () => {
   it('renders the CTA headline', () => {
-    render(<App />)
-    expect(screen.getByText(/ready to explore/i)).toBeInTheDocument()
+    renderPage()
+    expect(screen.getByText(/build the southern starport/i)).toBeInTheDocument()
   })
 
-  it('all CTA buttons link to X.com', () => {
-    const { container } = render(<App />)
+  it('all CTA section links point to X.com', () => {
+    const { container } = renderPage()
     container.querySelectorAll('.cta-buttons a').forEach((link) => {
       expect(link).toHaveAttribute('href', 'https://x.com/TerAustralis')
     })
@@ -247,12 +299,12 @@ describe('CTA section', () => {
 
 describe('Footer', () => {
   it('renders the copyright notice', () => {
-    render(<App />)
+    renderPage()
     expect(screen.getByText(/© 2026 TerAustralis/)).toBeInTheDocument()
   })
 
   it('has a "Twitter / X" footer link pointing to X.com', () => {
-    render(<App />)
+    renderPage()
     expect(screen.getByRole('link', { name: 'Twitter / X' })).toHaveAttribute(
       'href',
       'https://x.com/TerAustralis',
@@ -260,7 +312,7 @@ describe('Footer', () => {
   })
 
   it('the social icon button has an aria-label', () => {
-    render(<App />)
+    renderPage()
     expect(screen.getByRole('link', { name: 'X / Twitter' })).toBeInTheDocument()
   })
 })
