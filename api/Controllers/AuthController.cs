@@ -2,6 +2,7 @@ using System.Security.Claims;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Logging;
 using TerAustralis.Api.Models;
 using TerAustralis.Api.Models.DTOs;
 using TerAustralis.Api.Services;
@@ -16,17 +17,20 @@ public class AuthController : ControllerBase
     private readonly SignInManager<ApplicationUser> _signIn;
     private readonly ITokenService                  _tokens;
     private readonly IConfiguration                 _config;
+    private readonly ILogger<AuthController>        _logger;
 
     public AuthController(
         UserManager<ApplicationUser>   users,
         SignInManager<ApplicationUser> signIn,
         ITokenService                  tokens,
-        IConfiguration                 config)
+        IConfiguration                 config,
+        ILogger<AuthController>        logger)
     {
         _users  = users;
         _signIn = signIn;
         _tokens = tokens;
         _config = config;
+        _logger = logger;
     }
 
     // ── POST /api/auth/register ────────────────────────────────────────────────
@@ -134,8 +138,12 @@ public class AuthController : ControllerBase
         var frontendUrl = _config["FrontendUrl"] ?? "http://localhost";
         var errorBase   = $"{frontendUrl}/auth/error";
 
+        // A provider-side error is logged server-side only — never reflected
+        // back into the redirect URL (avoids open redirect / response splitting).
+        // The same failure also surfaces as a null login info below, so both
+        // paths converge on a single, fixed error code.
         if (remoteError != null)
-            return Redirect($"{errorBase}?message={Uri.EscapeDataString(remoteError)}");
+            _logger.LogWarning("External login provider reported an error during the OAuth callback.");
 
         var info = await _signIn.GetExternalLoginInfoAsync();
         if (info == null)
