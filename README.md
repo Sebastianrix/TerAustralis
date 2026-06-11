@@ -36,7 +36,7 @@ If you can move this forward — in government, at SpaceX, in industry — let�
 
 ## For builders
 
-Underneath the advocacy case sits an open, exploratory technical track: a coordination-layer protocol concept for high-cadence space operations. It is early-stage, openly licensed, and developed as a living draft.
+Underneath the advocacy case sits an exploratory technical track: a coordination-layer protocol concept for high-cadence space operations. It is early-stage and developed as a living draft.
 
 → **[Read the litepaper](./LITEPAPER.md)**
 
@@ -47,3 +47,17 @@ Underneath the advocacy case sits an open, exploratory technical track: a coordi
 This repo holds the TerAustralis Incognita website (`my-app` — React/Vite/TypeScript) and project documents.
 
 **TerAustralis Incognita** · ABN 70 741 068 059 · Founder: Crystal Elle Arena-Turner ([@TerAustralis](https://x.com/TerAustralis))
+
+-----
+
+## Copyright & licensing
+
+© 2026 Crystal Elle Arena-Turner (**TerAustralis Incognita**). **All rights reserved.**
+
+This project — its code, the litepaper, written documents, designs, and copy — is
+the property of the copyright holder. No license is granted to reuse, copy, modify,
+or redistribute it without prior written permission. The **TerAustralis** name,
+logos, and marks are reserved trademarks. See [`LICENSE`](./LICENSE) for the full
+terms and how to make a licensing or partnership inquiry.
+
+Third-party dependencies and assets remain under their own respective licenses.
