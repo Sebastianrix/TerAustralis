@@ -194,8 +194,8 @@ Decentralized. Open. Blazing. Multiplanetary.
 From the unknown southern land, we launch the known future.
 
 **Taglines**  
-- “Starbase Down Under — Permissionless.”  
-- “Terra Australis Incognita: Protocol for the Multiplanetary Age.”  
+- “Bringing Starbase Down Under — Permissionless.”  
+- “TerAustralis Incognita: Protocol for the Multiplanetary Age.”  
 - “Build the Southern Starport. Own the Coordination Layer.”
 
 ### Next Steps
