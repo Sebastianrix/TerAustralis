@@ -142,17 +142,20 @@ textarea:focus-visible {
 }
 .ta-hero__ctas { margin-top: 2.5rem; display: flex; flex-wrap: wrap; gap: 1rem; }
 
-/* ── Buttons ── */
+/* ── Buttons ──
+   Punchier gradient/glow treatment carried over from the original design,
+   using the global --purple / --cyan tokens defined in index.css. */
 .ta-btn {
   font-family: var(--ta-mono);
   font-size: 0.82rem;
   letter-spacing: 0.16em;
   text-transform: uppercase;
-  padding: 0.8rem 1.5rem;
+  padding: 0.85rem 1.7rem;
+  border-radius: 10px;
   text-decoration: none;
   display: inline-block;
   cursor: pointer;
-  transition: opacity 0.2s ease;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease, border-color 0.2s ease;
   border: none;
 }
 .ta-btn--ghost {
@@ -160,13 +163,21 @@ textarea:focus-visible {
   color: var(--ta-paper);
   background: transparent;
 }
-.ta-btn--ghost:hover { border-color: var(--ta-paper); }
-.ta-btn--violet {
-  background: var(--ta-violet);
-  color: var(--ta-depth);
-  font-weight: 500;
+.ta-btn--ghost:hover {
+  border-color: var(--ta-paper);
+  background: rgba(255, 255, 255, 0.04);
+  transform: translateY(-2px);
 }
-.ta-btn--violet:hover { opacity: 0.9; }
+.ta-btn--violet {
+  background: linear-gradient(135deg, var(--purple, #9b5cff), #7c3aed);
+  color: #fff;
+  font-weight: 600;
+  box-shadow: 0 0 26px rgba(155, 92, 255, 0.45);
+}
+.ta-btn--violet:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 0 46px rgba(155, 92, 255, 0.7);
+}
 
 /* ── Sections ── */
 .ta-section { padding: 4rem 0 0; }
@@ -285,9 +296,74 @@ textarea:focus-visible {
 .ta-footer__builders { opacity: 0.7; text-decoration: none; transition: opacity 0.2s ease; }
 .ta-footer__builders:hover { opacity: 1; }
 
+/* ── Milestones / roadmap ──
+   Phased timeline carried over from the original design, styled in the
+   purple/cyan look via the global tokens from index.css. */
+.ta-roadmap__head { margin-bottom: 3rem; }
+.ta-roadmap__title {
+  font-family: var(--ta-display);
+  font-size: clamp(1.6rem, 4vw, 2.4rem);
+  letter-spacing: 0.04em;
+  margin: 1rem 0 0;
+  font-weight: 400;
+}
+.ta-roadmap__sub { margin-top: 1rem; max-width: 36rem; font-size: 1.02rem; color: var(--ta-steel); }
+
+.ta-roadmap-list { display: flex; flex-direction: column; }
+.ta-rm-item { display: flex; gap: 1.5rem; }
+
+.ta-rm-line { display: flex; flex-direction: column; align-items: center; padding-top: 0.3rem; }
+.ta-rm-dot {
+  width: 14px; height: 14px; border-radius: 50%; flex-shrink: 0;
+  border: 2px solid var(--ta-hairline); background: var(--ta-depth);
+}
+.ta-rm-item--active .ta-rm-dot {
+  border-color: var(--purple, #9b5cff);
+  background: var(--purple, #9b5cff);
+  box-shadow: 0 0 12px var(--purple, #9b5cff);
+}
+.ta-rm-item--done .ta-rm-dot { border-color: #4ade80; background: #4ade80; }
+.ta-rm-connector { flex: 1; width: 1px; background: var(--ta-hairline); min-height: 2.5rem; margin: 0.3rem 0; }
+
+.ta-rm-body { padding-bottom: 3rem; flex: 1; }
+.ta-rm-header { display: flex; align-items: center; gap: 0.75rem; margin-bottom: 0.4rem; }
+.ta-rm-phase {
+  font-family: var(--ta-mono);
+  font-size: 0.66rem; letter-spacing: 0.16em; text-transform: uppercase;
+  color: var(--ta-steel);
+}
+.ta-rm-name {
+  font-family: var(--ta-display);
+  font-size: clamp(1.2rem, 2.5vw, 1.6rem);
+  letter-spacing: 0.04em; font-weight: 400;
+  color: var(--ta-paper); margin: 0 0 0.9rem;
+}
+.ta-rm-item--active .ta-rm-name {
+  background: linear-gradient(135deg, var(--purple-bright, #c084fc), var(--cyan, #22d3ee));
+  -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;
+}
+.ta-rm-items { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: 0.5rem; }
+.ta-rm-items li {
+  font-family: var(--ta-mono); font-size: 0.72rem;
+  color: var(--ta-steel); background: rgba(255, 255, 255, 0.03);
+  border: 1px solid var(--ta-hairline); border-radius: 100px; padding: 0.25rem 0.8rem;
+}
+.ta-rm-item--done .ta-rm-items li { border-color: rgba(74, 222, 128, 0.25); color: #86efac; }
+.ta-rm-item--active .ta-rm-items li { border-color: rgba(155, 92, 255, 0.3); }
+
+.ta-rm-badge {
+  display: inline-flex; padding: 0.2rem 0.65rem; border-radius: 100px;
+  font-family: var(--ta-mono); font-size: 0.62rem; letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+.ta-rm-badge--done { background: rgba(34, 197, 94, 0.1); color: #4ade80; border: 1px solid rgba(34, 197, 94, 0.25); }
+.ta-rm-badge--active { background: rgba(155, 92, 255, 0.15); color: var(--purple-bright, #c084fc); border: 1px solid rgba(155, 92, 255, 0.35); }
+.ta-rm-badge--soon { background: rgba(255, 255, 255, 0.04); color: var(--ta-steel); border: 1px solid var(--ta-hairline); }
+
 /* ── Reduced motion ── */
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
   .ta-reveal { opacity: 1; transform: none; transition: none; }
   .ta-btn, .ta-nav__links a, .ta-footer__builders { transition: none; }
+  .ta-btn--violet:hover, .ta-btn--ghost:hover { transform: none; }
 }
