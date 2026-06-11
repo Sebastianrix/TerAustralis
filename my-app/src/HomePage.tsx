@@ -1,73 +1,14 @@
 import { useEffect, useState, type FormEvent } from "react";
 import { Link } from "react-router-dom";
+import StarCanvas from "./StarCanvas";
 import "./HomePage.css";
 
 /* ────────────────────────────────────────────────────────────────
-   TerAustralis Incognita — Homepage
-   Brand: Deep Navy #13294B · Steel #AEBCCD · Electric Violet #8E5BFF
-   Copy: approved 5 June 2026 (advocacy front door)
-   Styling: plain CSS — see HomePage.css
+   TerAustralis Incognita — Homepage (advocacy front door)
+   Visual language shared with /builders: cosmic dark (#060814),
+   purple/cyan gradients, animated starfield, Space Grotesk + Inter.
+   Copy approved 5 June 2026. Styling: plain CSS — see HomePage.css
    ──────────────────────────────────────────────────────────────── */
-
-function ChartField() {
-  const stars = [
-    { x: 76.0, y: 30.0, r: 2.4, lead: true }, // Acrux — lead star, violet
-    { x: 81.5, y: 22.5, r: 2.0 },             // Mimosa
-    { x: 74.5, y: 14.5, r: 1.8 },             // Gacrux
-    { x: 69.5, y: 21.0, r: 1.5 },             // Delta Crucis
-    { x: 72.8, y: 24.8, r: 1.0 },             // Epsilon Crucis
-  ];
-  const ticks = Array.from({ length: 72 });
-  return (
-    <svg
-      aria-hidden="true"
-      className="ta-chart"
-      viewBox="0 0 100 60"
-      preserveAspectRatio="xMidYMid slice"
-    >
-      {[10, 20, 30, 40, 50].map((y) => (
-        <line key={`h${y}`} x1="0" y1={y} x2="100" y2={y} className="ta-grat" />
-      ))}
-      {[12.5, 25, 37.5, 50, 62.5, 75, 87.5].map((x) => (
-        <line key={`v${x}`} x1={x} y1="0" x2={x} y2="60" className="ta-grat" />
-      ))}
-      <g className="ta-ring">
-        <circle cx="12" cy="58" r="26" strokeWidth="0.12" />
-        <circle cx="12" cy="58" r="21" strokeWidth="0.08" />
-        {ticks.map((_, i) => {
-          const a = (i * 5 * Math.PI) / 180;
-          const r1 = i % 18 === 0 ? 23.4 : 24.6;
-          return (
-            <line
-              key={i}
-              x1={12 + r1 * Math.cos(a)}
-              y1={58 + r1 * Math.sin(a)}
-              x2={12 + 26 * Math.cos(a)}
-              y2={58 + 26 * Math.sin(a)}
-              strokeWidth={i % 18 === 0 ? 0.18 : 0.09}
-            />
-          );
-        })}
-      </g>
-      {/* violet north point — the navigator's true mark */}
-      <path d="M 12 31.4 L 12.9 34.4 L 12 33.7 L 11.1 34.4 Z" className="ta-north" />
-      <g>
-        {stars.map((s, i) => (
-          <g key={i} className={s.lead ? "ta-star ta-star--lead" : "ta-star"}>
-            <circle cx={s.x} cy={s.y} r={s.r * 0.32} />
-            <line x1={s.x - s.r} y1={s.y} x2={s.x + s.r} y2={s.y} strokeWidth="0.1" />
-            <line x1={s.x} y1={s.y - s.r} x2={s.x} y2={s.y + s.r} strokeWidth="0.1" />
-          </g>
-        ))}
-        <line
-          x1="76" y1="30" x2="74.5" y2="14.5"
-          className="ta-pointer"
-          strokeDasharray="0.7 0.9"
-        />
-      </g>
-    </svg>
-  );
-}
 
 const MILESTONES = [
   {
@@ -148,7 +89,9 @@ export default function HomePage() {
   };
 
   return (
-    <div className="ta-page">
+    <>
+      <StarCanvas />
+      <div className="ta-page">
       {/* ── Nav ── */}
       <header className="ta-nav">
         <div className="ta-container ta-nav__inner">
@@ -167,7 +110,11 @@ export default function HomePage() {
 
       {/* ── Hero ── */}
       <section id="top" className="ta-hero">
-        <ChartField />
+        <div className="ta-hero__glow" aria-hidden="true">
+          <div className="ta-orb ta-orb--1" />
+          <div className="ta-orb ta-orb--2" />
+          <div className="ta-orb ta-orb--3" />
+        </div>
         <div className="ta-container ta-hero__content">
           <div className="ta-eyebrow">
             SOUTH-OF-THE-EQUATOR NAVIGATOR · ABN 70 741 068 059
@@ -361,6 +308,7 @@ export default function HomePage() {
           </Link>
         </div>
       </footer>
-    </div>
+      </div>
+    </>
   );
 }
