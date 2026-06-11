@@ -69,6 +69,29 @@ function ChartField() {
   );
 }
 
+const MILESTONES = [
+  {
+    phase: "Phase 01", name: "Genesis", badge: "Complete", state: "done" as const,
+    items: ["Vision & community seeding", "Early outreach", "Whitepaper v1", "Core team formation"],
+  },
+  {
+    phase: "Phase 02", name: "Discovery", badge: "Live Now", state: "active" as const,
+    items: ["Protocol specification", "Architecture refinement", "Stakeholder mapping", "Builder recruitment"],
+  },
+  {
+    phase: "Phase 03", name: "Exploration", badge: "Q3–Q4 2026", state: "soon" as const,
+    items: ["Test launch", "Pilot integrations", "Governance experiments", "Consent-aligned land-use primitives"],
+  },
+  {
+    phase: "Phase 04", name: "Settlement", badge: "2027+", state: "soon" as const,
+    items: ["Mainnet launch", "Physical coordination pilots", "Sovereign framework engagement", "Initial interplanetary experiments"],
+  },
+  {
+    phase: "Phase 05", name: "Expansion", badge: "Future", state: "soon" as const,
+    items: ["Lunar / Mars nodes", "Scaled multiplanetary primitives", "Full decentralisation", "The unknown frontier"],
+  },
+];
+
 const PILLARS = [
   {
     coord: "20.66°S · 116.71°E — DAMPIER / KARRATHA",
@@ -135,6 +158,7 @@ export default function HomePage() {
           <nav className="ta-nav__links">
             <a href="#vision">The Vision</a>
             <a href="#case">The Case</a>
+            <a href="#milestones">Milestones</a>
             <Link to="/builders">For Builders</Link>
             <a href="#contact" className="ta-nav__contact">Contact</a>
           </nav>
@@ -217,6 +241,43 @@ export default function HomePage() {
               PARTNERSHIP WITH TRADITIONAL OWNERS IS FOUNDATIONAL — THE STARTING
               POINT, NOT AN APPROVAL STEP.
             </p>
+          </div>
+        </div>
+        <div className="ta-rule" />
+      </section>
+
+      {/* ── Milestones ── */}
+      <section id="milestones" className="ta-section ta-reveal">
+        <div className="ta-container">
+          <div className="ta-roadmap__head">
+            <div className="ta-eyebrow">MILESTONES</div>
+            <h2 className="ta-roadmap__title">THE EXPEDITION PLAN</h2>
+            <p className="ta-roadmap__sub">
+              From genesis to multiplanetary settlement — each phase charts new
+              territory in the open frontier.
+            </p>
+          </div>
+          <div className="ta-roadmap-list">
+            {MILESTONES.map((m, i) => (
+              <div key={m.phase} className={`ta-rm-item ta-rm-item--${m.state}`}>
+                <div className="ta-rm-line">
+                  <div className="ta-rm-dot" />
+                  {i < MILESTONES.length - 1 && <div className="ta-rm-connector" />}
+                </div>
+                <div className="ta-rm-body">
+                  <div className="ta-rm-header">
+                    <span className="ta-rm-phase">{m.phase}</span>
+                    <span className={`ta-rm-badge ta-rm-badge--${m.state}`}>{m.badge}</span>
+                  </div>
+                  <div className="ta-rm-name">{m.name}</div>
+                  <ul className="ta-rm-items">
+                    {m.items.map((item) => (
+                      <li key={item}>{item}</li>
+                    ))}
+                  </ul>
+                </div>
+              </div>
+            ))}
           </div>
         </div>
         <div className="ta-rule" />

@@ -95,6 +95,41 @@ describe('The Case', () => {
 })
 
 // ---------------------------------------------------------------------------
+// Milestones
+// ---------------------------------------------------------------------------
+
+describe('Milestones', () => {
+  it('renders all five phases', () => {
+    const { container } = renderPage()
+    expect(container.querySelectorAll('.ta-rm-item')).toHaveLength(5)
+  })
+
+  it.each(['Genesis', 'Discovery', 'Exploration', 'Settlement', 'Expansion'])(
+    'renders the "%s" phase',
+    (name) => {
+      renderPage()
+      expect(screen.getByText(name)).toBeInTheDocument()
+    },
+  )
+
+  it('marks exactly one phase active', () => {
+    const { container } = renderPage()
+    expect(container.querySelectorAll('.ta-rm-item--active')).toHaveLength(1)
+  })
+
+  it('Discovery is the active phase', () => {
+    renderPage()
+    expect(screen.getByText('Discovery').closest('.ta-rm-item')).toHaveClass('ta-rm-item--active')
+  })
+
+  it('shows the Complete and Live Now badges', () => {
+    renderPage()
+    expect(screen.getByText('Complete')).toBeInTheDocument()
+    expect(screen.getByText('Live Now')).toBeInTheDocument()
+  })
+})
+
+// ---------------------------------------------------------------------------
 // Contact form
 // ---------------------------------------------------------------------------
 
