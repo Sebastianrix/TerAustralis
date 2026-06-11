@@ -462,7 +462,7 @@ export default function BuildersPage() {
             <div className="footer-social">
               <a className="social-btn" href="https://x.com/TerAustralis" target="_blank" rel="noreferrer" aria-label="X / Twitter">𝕏</a>
             </div>
-            <div className="footer-copy">© 2026 TerAustralis. All rights reserved.</div>
+            <div className="footer-copy">© 2026 TerAustralis Incognita. All rights reserved.</div>
           </div>
         </footer>
 
