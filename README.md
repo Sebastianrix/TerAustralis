@@ -52,7 +52,7 @@ This repo holds the TerAustralis Incognita website (`my-app` — React/Vite/Type
 
 ## Copyright & licensing
 
-© 2026 Crystal Elle Arena-Turner (**TerAustralis Incognita**). **All rights reserved.**
+© 2026 **TerAustralis Incognita** (founder: Crystal Elle Arena-Turner). **All rights reserved.**
 
 This project — its code, the litepaper, written documents, designs, and copy — is
 the property of the copyright holder. No license is granted to reuse, copy, modify,
