@@ -126,7 +126,7 @@ const values = [
     icon: '⬡',
     cls: 'vi-cyan',
     title: 'Southern Advantage',
-    desc: "Critical minerals + favorable launch geography + sovereign stability + respectful Indigenous partnership. Australia's edge is the protocol's edge.",
+    desc: "Critical minerals + favourable launch geography + sovereign stability + respectful Indigenous partnership. Australia's edge is the protocol's edge.",
   },
   {
     icon: '🚀',
@@ -217,7 +217,7 @@ export default function BuildersPage() {
           </h1>
           <p className="hero-subtitle">Incognita</p>
 
-          <p className="hero-tagline">Starbase Down Under — Work in progress. test</p>
+          <p className="hero-tagline">Bringing Starbase Down Under</p>
 
           <p className="hero-description">
             The coordination layer for high-cadence Earth-to-multiplanetary operations.
@@ -267,7 +267,7 @@ export default function BuildersPage() {
           <div className="section-inner thesis-inner">
             <div className="thesis-text">
               <div className="section-tag">Core Thesis</div>
-              <h2 className="section-title">The multiplanetary transition will be won by the civilization that coordinates fastest.</h2>
+              <h2 className="section-title">The multiplanetary transition will be won by the civilisation that coordinates fastest.</h2>
               <p className="thesis-body">
                 Australia's critical minerals, equatorial-proximate northern launch geography, southern polar access,
                 and sovereign stability give it asymmetric advantage — if we build the right coordination protocol now.
@@ -439,7 +439,7 @@ export default function BuildersPage() {
                 <button className="btn-cta btn-cta-secondary">Follow on X ↗</button>
               </a>
             </div>
-            <p className="cta-tagline">Terra Australis Incognita: Protocol for the Multiplanetary Age.</p>
+            <p className="cta-tagline">TerAustralis Incognita: Protocol for the Multiplanetary Age.</p>
           </div>
         </section>
 
@@ -451,7 +451,7 @@ export default function BuildersPage() {
                 <div className="nav-logo-icon">✦</div>
                 TerAustralis
               </div>
-              <div className="footer-tagline">Terra Australis Incognita — Litepaper v0.2.4</div>
+              <div className="footer-tagline">TerAustralis Incognita — Litepaper v0.2.4</div>
             </div>
             <div className="footer-links">
               <a className="footer-link" href="#protocol">Protocol</a>

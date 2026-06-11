@@ -26,7 +26,7 @@
       '<div class="nav-inner">' +
         '<a class="nav-logo" href="index.html">' +
           '<span class="mark">✦</span>' +
-          '<span>TerAustralis<br><small>Incognita · Starbase Down Under</small></span>' +
+          '<span>TerAustralis<br><small>Incognita · Bringing Starbase Down Under</small></span>' +
         '</a>' +
         '<ul class="nav-links" id="navLinks">' + navLinks + '</ul>' +
         '<div class="nav-right">' +
@@ -44,7 +44,7 @@
         '<div class="footer-grid">' +
           '<div>' +
             '<div class="nav-logo"><span class="mark">✦</span><span>TerAustralis</span></div>' +
-            '<p class="footer-tag">Starbase Down Under — the Southern Hemisphere coordination layer for Earth-to-multiplanetary operations. From the red dust of the Pilbara to the stars.</p>' +
+            '<p class="footer-tag">Bringing Starbase Down Under — the Southern Hemisphere coordination layer for Earth-to-multiplanetary operations. From the red dust of the Pilbara to the stars.</p>' +
           '</div>' +
           '<div>' +
             '<h4>Explore</h4>' +
