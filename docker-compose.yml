@@ -1,8 +1,12 @@
 services:
 
   # ── PostgreSQL ───────────────────────────────────────────────────────────────
+  # Parked behind the "backend" profile: the public site is static and uses no
+  # API, so postgres/api do not start by default. Bring them up when login is
+  # built:  docker compose --profile backend up -d --build
   postgres:
     image: postgres:16-alpine
+    profiles: ["backend"]
     environment:
       POSTGRES_DB:       teraustralis
       POSTGRES_USER:     teraustralis
@@ -19,6 +23,7 @@ services:
   # ── ASP.NET Core API ─────────────────────────────────────────────────────────
   api:
     build: ./api
+    profiles: ["backend"]
     ports:
       - "5000:8080"
     environment:
