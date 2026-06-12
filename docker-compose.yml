@@ -17,36 +17,36 @@ services:
     restart: unless-stopped
 
   # ── ASP.NET Core API ─────────────────────────────────────────────────────────
-  api:
-    build: ./api
-    ports:
-      - "5000:8080"
-    environment:
-      ASPNETCORE_ENVIRONMENT: Production
-      ASPNETCORE_URLS:        http://+:8080
+  #api:
+    #build: ./api
+  #  ports:
+  #    - "5000:8080"
+  #  environment:
+  #    ASPNETCORE_ENVIRONMENT: Production
+   #   ASPNETCORE_URLS:        http://+:8080
 
       # Database
-      ConnectionStrings__DefaultConnection: >-
-        Host=postgres;Database=teraustralis;Username=teraustralis;Password=${POSTGRES_PASSWORD:-changeme_in_production}
+ #     ConnectionStrings__DefaultConnection: >-
+  #      #Host=postgres;Database=teraustralis;Username=teraustralis;Password=$#{POSTGRES_PASS#WORD:-changeme_in_production}
 
       # JWT
-      Jwt__Secret:   ${JWT_SECRET}
-      Jwt__Issuer:   ${JWT_ISSUER:-https://api.teraustralis.io}
-      Jwt__Audience: ${JWT_AUDIENCE:-https://teraustralis.io}
+#      Jwt__Secret:   ${JWT_SECRET}
+ #     Jwt__Issuer:   ${JWT_ISSUER:-https://api.teraustralis.io}
+ #     Jwt__Audience: ${JWT_AUDIENCE:-https://teraustralis.io}
 
-      # OAuth providers
-      Authentication__Google__ClientId:     ${GOOGLE_CLIENT_ID}
-      Authentication__Google__ClientSecret: ${GOOGLE_CLIENT_SECRET}
-      Authentication__GitHub__ClientId:     ${GITHUB_CLIENT_ID}
-      Authentication__GitHub__ClientSecret: ${GITHUB_CLIENT_SECRET}
+  #    # OAuth providers
+ #     Authentication__Google__ClientId:     ${GOOGLE_CLIENT_ID}
+  #    Authentication__Google__ClientSecret: ${GOOGLE_CLIENT_SECRET}
+    #  Authentication__GitHub__ClientId:     ${GITHUB_CLIENT_ID}
+   #   Authentication__GitHub__ClientSecret: ${GITHUB_CLIENT_SECRET}
 
       # CORS + OAuth redirect base
-      AllowedOrigins: ${FRONTEND_URL:-http://localhost}
-      FrontendUrl:    ${FRONTEND_URL:-http://localhost}
-    depends_on:
-      postgres:
-        condition: service_healthy
-    restart: unless-stopped
+  #    AllowedOrigins: ${FRONTEND_URL:-http://localhost}
+  #    FrontendUrl:    ${FRONTEND_URL:-http://localhost}
+  #  depends_on:
+    #  postgres:
+     #   condition: service_healthy
+    #restart: unless-stopped
 
   # ── React / Nginx frontend ───────────────────────────────────────────────────
   web:
