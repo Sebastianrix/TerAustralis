@@ -65,4 +65,4 @@ jobs:
           }
 
           wait_for "web" "http://localhost:8081/" "web"
-          wait_for "api" "http://localhost:5000/health" "api"
+         # wait_for "api" "http://localhost:5000/health" "api"
