@@ -26,4 +26,6 @@ This is a **permissive, patent-aware** license designed to enable open, collabor
 
 ---
 
+Copyright 2026 Crystal Elle Arena-Turner
+
 For the full license text, see [`LICENSE`](./LICENSE) in this repository or visit http://www.apache.org/licenses/LICENSE-2.0
